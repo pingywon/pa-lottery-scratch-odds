@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PA Lottery Scratch Odds</title>
+<style>
+  :root {
+    --bg: #f4f5f7;
+    --panel: #ffffff;
+    --border: #dde1e6;
+    --text: #1a1d23;
+    --text-dim: #5b6270;
+    --accent: #7c3aed;
+    --accent-dim: #ede9fe;
+    --good: #16a34a;
+    --good-bg: #dcfce7;
+    --warn: #d97706;
+    --bad: #dc2626;
+    --shadow: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  header {
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 24px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  header h1 {
+    margin: 0 0 2px;
+    font-size: 1.5rem;
+    letter-spacing: -0.01em;
+  }
+  header .sub {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    margin-bottom: 14px;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  .controls input[type="search"] {
+    flex: 1 1 220px;
+    padding: 9px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    background: var(--bg);
+    color: var(--text);
+  }
+  .controls select {
+    padding: 9px 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    background: var(--bg);
+    color: var(--text);
+  }
+  .chip {
+    border: 1px solid var(--border);
+    background: var(--panel);
+    color: var(--text-dim);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  .chip.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  .chip-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  #resultBar {
+    max-width: 1400px;
+    margin: 14px auto 0;
+    padding: 0 24px;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+  }
+  #grid {
+    max-width: 1400px;
+    margin: 12px auto 40px;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    transition: transform .12s ease;
+  }
+  .card:hover { transform: translateY(-2px); }
+  .card .imgwrap {
+    position: relative;
+    background: #eee;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+  }
+  .card .imgwrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .card .imgwrap .noimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 10px;
+  }
+  .ribbon {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.03em;
+  }
+  .badgebar {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-end;
+  }
+  .badgebar span {
+    background: rgba(0,0,0,.65);
+    color: #fff;
+    font-size: 0.62rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  .card .body { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+  .card .name { font-weight: 600; font-size: 0.88rem; line-height: 1.25; }
+  .card .gamenum { color: var(--text-dim); font-size: 0.72rem; }
+  .row2 { display: flex; justify-content: space-between; align-items: center; margin-top: 2px; }
+  .price-badge {
+    background: var(--accent-dim);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.78rem;
+    padding: 2px 8px;
+    border-radius: 6px;
+  }
+  .top-prize { font-size: 0.78rem; font-weight: 600; color: var(--text); }
+  .odds-line { font-size: 0.74rem; color: var(--text-dim); display: flex; justify-content: space-between; }
+  .odds-line b { color: var(--text); font-weight: 600; }
+  .progress-wrap { margin-top: 4px; }
+  .progress-label { font-size: 0.68rem; color: var(--text-dim); display: flex; justify-content: space-between; margin-bottom: 3px; }
+  .progress-bar { background: var(--border); border-radius: 999px; height: 6px; overflow: hidden; }
+  .progress-fill { background: var(--good); height: 100%; }
+  .progress-fill.mid { background: var(--warn); }
+  .progress-fill.low { background: var(--bad); }
+  .deal-score-badge {
+    align-self: flex-start;
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 5px;
+    background: var(--good-bg);
+    color: var(--good);
+  }
+
+  /* modal */
+  #overlay {
+    position: fixed; inset: 0; background: rgba(15,17,21,.6);
+    display: none; align-items: flex-start; justify-content: center;
+    padding: 30px 16px; overflow-y: auto; z-index: 100;
+  }
+  #overlay.open { display: flex; }
+  #modal {
+    background: var(--panel);
+    border-radius: var(--radius);
+    max-width: 760px;
+    width: 100%;
+    padding: 24px;
+    position: relative;
+  }
+  #modal .close {
+    position: absolute; top: 14px; right: 14px;
+    border: none; background: var(--bg); width: 30px; height: 30px;
+    border-radius: 50%; cursor: pointer; font-size: 1rem; color: var(--text-dim);
+  }
+  #modal .top {
+    display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 16px;
+  }
+  #modal .imgcol { flex: 0 0 200px; }
+  #modal .imgcol img { width: 100%; border-radius: 8px; border: 1px solid var(--border); display: block; }
+  #modal .toggle-img {
+    margin-top: 6px; width: 100%; padding: 6px; border: 1px solid var(--border);
+    border-radius: 6px; background: var(--bg); cursor: pointer; font-size: 0.75rem;
+  }
+  #modal .info { flex: 1 1 260px; min-width: 220px; }
+  #modal h2 { margin: 0 0 2px; font-size: 1.2rem; }
+  #modal .gamenum { color: var(--text-dim); font-size: 0.8rem; margin-bottom: 10px; }
+  #modal .statgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+  #modal .stat { background: var(--bg); border-radius: 8px; padding: 8px 10px; }
+  #modal .stat .label { font-size: 0.68rem; color: var(--text-dim); }
+  #modal .stat .value { font-size: 0.95rem; font-weight: 700; }
+  #modal table { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 0.8rem; }
+  #modal table th, #modal table td { padding: 6px 8px; border-bottom: 1px solid var(--border); text-align: right; }
+  #modal table th:first-child, #modal table td:first-child { text-align: left; }
+  #modal table tr.untracked td { color: var(--text-dim); }
+  #modal .footnote { font-size: 0.72rem; color: var(--text-dim); margin-top: 10px; line-height: 1.4; }
+  #modal .links { margin-top: 14px; display: flex; gap: 12px; font-size: 0.8rem; }
+  #modal .links a { color: var(--accent); text-decoration: none; }
+  #modal .links a:hover { text-decoration: underline; }
+
+  footer {
+    max-width: 1400px;
+    margin: 0 auto 30px;
+    padding: 0 24px;
+    color: var(--text-dim);
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>PA Lottery Scratch Odds</h1>
+  <div class="sub" id="freshness">Loading…</div>
+  <div class="controls">
+    <input type="search" id="search" placeholder="Search by name or game number…">
+    <select id="sort">
+      <option value="deal_score">Sort: Best Deals</option>
+      <option value="price">Sort: Price</option>
+      <option value="overall_odds_published">Sort: Published Overall Odds (best first)</option>
+      <option value="top6_adjusted_odds_now">Sort: Adjusted Top-Prize Odds (best first)</option>
+      <option value="top_prize_amount">Sort: Top Prize $</option>
+      <option value="pct_top_prizes_remaining">Sort: % Top Prizes Remaining</option>
+      <option value="newest">Sort: Newest</option>
+    </select>
+  </div>
+  <div class="chip-row" id="priceChips"></div>
+  <div class="chip-row" id="badgeChips">
+    <span class="chip" data-badge="second_chance">Second Chance</span>
+    <span class="chip" data-badge="online_game">Online Game</span>
+    <span class="chip" data-badge="fast_play">Fast Play</span>
+    <span class="chip" data-badge="sales_ending_soon">Sales Ending Soon</span>
+    <span class="chip" data-badge="new">New</span>
+  </div>
+</header>
+
+<div id="resultBar"></div>
+<div id="grid"></div>
+
+<footer id="footerNote"></footer>
+
+<div id="overlay">
+  <div id="modal"></div>
+</div>
+
+<script>
+let GAMES = [];
+let META = {};
+const state = { search: "", sort: "deal_score", price: null, badges: new Set() };
+
+async function load() {
+  const res = await fetch('/api/games.json');
+  const data = await res.json();
+  META = data;
+  GAMES = data.games || [];
+  buildPriceChips();
+  renderFreshness();
+  render();
+}
+
+function renderFreshness() {
+  const el = document.getElementById('freshness');
+  const scraped = META.scraped_at ? new Date(META.scraped_at).toLocaleString() : 'unknown';
+  const remain = META.prizes_remaining_as_of || 'unknown';
+  el.textContent = `${META.game_count || 0} active games · data pulled ${scraped} · wins-remaining figures as of ${remain}`;
+  document.getElementById('footerNote').innerHTML =
+    `Unofficial, independently built data aggregator — not affiliated with or endorsed by the Pennsylvania Lottery. ` +
+    `Data is scraped from public palottery.pa.gov pages and may lag the live site by up to a day. ` +
+    `"Deal score" is this project's own weighted heuristic, not an official ranking. ` +
+    `"Adjusted odds" figures use the exact original ticket count from each game's official Pennsylvania Bulletin filing ` +
+    `and only cover the 6 prize tiers PA Lottery tracks live — smaller/common prizes aren't publicly tracked, so they're ` +
+    `shown with their official published odds only, not an adjusted figure.`;
+}
+
+function buildPriceChips() {
+  const prices = [...new Set(GAMES.map(g => g.price).filter(p => p != null))].sort((a, b) => a - b);
+  const wrap = document.getElementById('priceChips');
+  wrap.innerHTML = '';
+  prices.forEach(p => {
+    const chip = document.createElement('span');
+    chip.className = 'chip';
+    chip.textContent = `$${p}`;
+    chip.dataset.price = p;
+    chip.addEventListener('click', () => {
+      state.price = (state.price === p) ? null : p;
+      [...wrap.children].forEach(c => c.classList.toggle('active', Number(c.dataset.price) === state.price));
+      render();
+    });
+    wrap.appendChild(chip);
+  });
+}
+
+document.querySelectorAll('#badgeChips .chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    const b = chip.dataset.badge;
+    if (state.badges.has(b)) { state.badges.delete(b); chip.classList.remove('active'); }
+    else { state.badges.add(b); chip.classList.add('active'); }
+    render();
+  });
+});
+
+let searchTimer;
+document.getElementById('search').addEventListener('input', e => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => { state.search = e.target.value.trim().toLowerCase(); render(); }, 150);
+});
+document.getElementById('sort').addEventListener('change', e => { state.sort = e.target.value; render(); });
+
+function oddsBetter(a, b) { // lower "1 in X" is better; nulls sort last
+  if (a == null) return 1;
+  if (b == null) return -1;
+  return a - b;
+}
+
+function render() {
+  let list = GAMES.filter(g => {
+    if (state.search) {
+      const hay = `${g.name || ''} ${g.game_number || ''}`.toLowerCase();
+      if (!hay.includes(state.search)) return false;
+    }
+    if (state.price != null && g.price !== state.price) return false;
+    for (const b of state.badges) {
+      if (!g.badges || !g.badges[b]) return false;
+    }
+    return true;
+  });
+
+  const sortKey = state.sort;
+  list.sort((a, b) => {
+    if (sortKey === 'newest') return (b.badges?.new ? 1 : 0) - (a.badges?.new ? 1 : 0);
+    if (sortKey === 'price') return (a.price ?? 1e9) - (b.price ?? 1e9);
+    if (sortKey === 'overall_odds_published') return oddsBetter(a.overall_odds_published, b.overall_odds_published);
+    if (sortKey === 'top6_adjusted_odds_now') return oddsBetter(a.top6_adjusted_odds_now, b.top6_adjusted_odds_now);
+    if (sortKey === 'top_prize_amount') return (b.top_prize_amount ?? 0) - (a.top_prize_amount ?? 0);
+    if (sortKey === 'pct_top_prizes_remaining') return (b.pct_top_prizes_remaining ?? -1) - (a.pct_top_prizes_remaining ?? -1);
+    // deal_score default
+    return (b.deal_score ?? -1) - (a.deal_score ?? -1);
+  });
+
+  document.getElementById('resultBar').textContent = `${list.length} game${list.length === 1 ? '' : 's'}`;
+  const grid = document.getElementById('grid');
+  grid.innerHTML = '';
+  list.forEach(g => grid.appendChild(renderCard(g)));
+}
+
+function money(n) {
+  if (n == null) return '—';
+  return '$' + n.toLocaleString();
+}
+function oddsText(n) {
+  if (n == null) return '—';
+  return `1 in ${n.toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
+}
+
+function renderCard(g) {
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.addEventListener('click', () => openModal(g));
+
+  const pct = g.pct_top_prizes_remaining;
+  const pctClass = pct == null ? '' : (pct >= 50 ? '' : pct >= 15 ? 'mid' : 'low');
+
+  const badgeHtml = ['second_chance', 'online_game', 'fast_play', 'sales_ending_soon']
+    .filter(b => g.badges && g.badges[b])
+    .map(b => `<span>${b.replace(/_/g, ' ')}</span>`).join('');
+
+  card.innerHTML = `
+    <div class="imgwrap">
+      ${g.images && g.images.cover ? `<img src="/${g.images.cover}" alt="${g.name || ''}" loading="lazy">` : `<div class="noimg">No image available</div>`}
+      ${g.badges && g.badges.new ? `<span class="ribbon">NEW</span>` : ''}
+      ${badgeHtml ? `<div class="badgebar">${badgeHtml}</div>` : ''}
+    </div>
+    <div class="body">
+      <div class="name">${g.name || 'Unnamed game'}</div>
+      <div class="gamenum">${g.game_number || ''}</div>
+      <div class="row2">
+        <span class="price-badge">$${g.price ?? '?'}</span>
+        <span class="top-prize">Top: ${money(g.top_prize_amount)}</span>
+      </div>
+      <div class="odds-line"><span>Odds of any prize (published)</span><b>${oddsText(g.overall_odds_published)}</b></div>
+      <div class="odds-line"><span>Adjusted top-prize odds (live)</span><b>${oddsText(g.top6_adjusted_odds_now)}</b></div>
+      <div class="progress-wrap">
+        <div class="progress-label"><span>Top prizes remaining</span><span>${pct == null ? '—' : pct + '%'} (${g.top_prize_remaining ?? '?'} of ${g.top_prize_original ?? '?'})</span></div>
+        <div class="progress-bar"><div class="progress-fill ${pctClass}" style="width:${pct ?? 0}%"></div></div>
+      </div>
+      ${g.deal_score != null ? `<span class="deal-score-badge">Deal score ${g.deal_score}</span>` : ''}
+    </div>
+  `;
+  return card;
+}
+
+let showingBack = false;
+function openModal(g) {
+  showingBack = false;
+  const overlay = document.getElementById('overlay');
+  const modal = document.getElementById('modal');
+  modal.innerHTML = modalHtml(g);
+  overlay.classList.add('open');
+  modal.querySelector('.close').addEventListener('click', closeModal);
+  const img = modal.querySelector('.imgcol img');
+  const toggleBtn = modal.querySelector('.toggle-img');
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      showingBack = !showingBack;
+      const src = showingBack ? g.images.uncovered : g.images.cover;
+      if (src) img.src = '/' + src;
+      toggleBtn.textContent = showingBack ? 'Show front' : 'Show back';
+    });
+  }
+}
+function closeModal() { document.getElementById('overlay').classList.remove('open'); }
+document.getElementById('overlay').addEventListener('click', e => { if (e.target.id === 'overlay') closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+function modalHtml(g) {
+  const tiersRows = (g.tiers || []).map(t => `
+    <tr class="${t.tracked_live ? '' : 'untracked'}">
+      <td>${money(t.amount)}</td>
+      <td>${t.original != null ? t.original.toLocaleString() : '—'}${t.original_understated ? ' *' : ''}</td>
+      <td>${oddsText(t.published_odds)}</td>
+      <td>${t.tracked_live ? (t.remaining != null ? t.remaining.toLocaleString() : '—') : 'not tracked live'}</td>
+      <td>${t.tracked_live ? oddsText(t.adjusted_odds_now) : '—'}</td>
+    </tr>`).join('');
+
+  const hasBack = g.images && g.images.uncovered;
+
+  return `
+    <button class="close" aria-label="Close">✕</button>
+    <div class="top">
+      <div class="imgcol">
+        ${g.images && g.images.cover ? `<img src="/${g.images.cover}" alt="${g.name || ''}">` : ''}
+        ${hasBack ? `<button class="toggle-img">Show back</button>` : ''}
+      </div>
+      <div class="info">
+        <h2>${g.name || 'Unnamed game'}</h2>
+        <div class="gamenum">${g.game_number || ''} · $${g.price ?? '?'} ticket</div>
+        <div class="statgrid">
+          <div class="stat"><div class="label">Odds of any prize (published)</div><div class="value">${oddsText(g.overall_odds_published)}</div></div>
+          <div class="stat"><div class="label">Adjusted top-prize odds (live)</div><div class="value">${oddsText(g.top6_adjusted_odds_now)}</div></div>
+          <div class="stat"><div class="label">Top prize</div><div class="value">${money(g.top_prize_amount)}</div></div>
+          <div class="stat"><div class="label">Top prizes remaining</div><div class="value">${g.top_prize_remaining ?? '?'} of ${g.top_prize_original ?? '?'}</div></div>
+          <div class="stat"><div class="label">Deal score</div><div class="value">${g.deal_score ?? '—'}</div></div>
+          <div class="stat"><div class="label">Total tickets printed (official)</div><div class="value">${g.total_tickets_printed ? g.total_tickets_printed.toLocaleString() : '—'}</div></div>
+        </div>
+      </div>
+    </div>
+    <table>
+      <thead><tr><th>Prize</th><th>Original (per state filing)</th><th>Published odds</th><th>Remaining (live)</th><th>Adjusted odds now</th></tr></thead>
+      <tbody>${tiersRows}</tbody>
+    </table>
+    <div class="footnote">
+      PA Lottery only publishes live remaining counts for the top 6 prize tiers — rows marked "not tracked live" show the
+      official published odds only. * = this tier's live remaining count exceeds the state's pre-launch approximate
+      original count (the Bulletin filing states an approximate print run before printing; actual production can run
+      higher for common prize tiers). Adjusted odds are unaffected by this and remain exact — they're computed from the
+      official total tickets printed and the live remaining count directly.
+    </div>
+    <div class="links">
+      ${g.detail_url ? `<a href="${g.detail_url}" target="_blank" rel="noopener">Official PA Lottery page ↗</a>` : ''}
+      ${g.bulletin_url ? `<a href="${g.bulletin_url}" target="_blank" rel="noopener">Official Bulletin filing ↗</a>` : ''}
+    </div>
+  `;
+}
+
+load();
+</script>
+</body>
+</html>

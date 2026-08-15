@@ -1,0 +1,13 @@
+[Unit]
+Description=PA Lottery Scratch Odds — scrape palottery.pa.gov and refresh data.json
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=pingywon
+Group=pingywon
+WorkingDirectory=/home/pingywon/pa-lottery-scratch-odds
+ExecStart=/usr/bin/python3 /home/pingywon/pa-lottery-scratch-odds/scrape.py
+NoNewPrivileges=true
+PrivateTmp=true
