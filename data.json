@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-16T10:39:12Z",
+  "scraped_at": "2026-08-16T18:23:22Z",
   "prizes_remaining_as_of": "August 11, 2026",
   "game_count": 68,
   "games": [
@@ -15,7 +15,7 @@
       "top_prize_remaining": 10,
       "pct_top_prizes_remaining": 100.0,
       "top6_adjusted_odds_now": 86.06,
-      "deal_score": 91.2,
+      "value_score_pct": 66.71,
       "tiers": [
         {
           "amount": 5000,
@@ -125,7 +125,7 @@
       "top_prize_remaining": 10,
       "pct_top_prizes_remaining": 100.0,
       "top6_adjusted_odds_now": 55.34,
-      "deal_score": 91.7,
+      "value_score_pct": 70.87,
       "tiers": [
         {
           "amount": 25000,
@@ -244,7 +244,7 @@
       "top_prize_remaining": 10,
       "pct_top_prizes_remaining": 100.0,
       "top6_adjusted_odds_now": 63.29,
-      "deal_score": 92.5,
+      "value_score_pct": 75.57,
       "tiers": [
         {
           "amount": 200000,
@@ -372,7 +372,7 @@
       "top_prize_remaining": 8,
       "pct_top_prizes_remaining": 100.0,
       "top6_adjusted_odds_now": 230.03,
-      "deal_score": 95.0,
+      "value_score_pct": 77.41,
       "tiers": [
         {
           "amount": 400000,
@@ -500,7 +500,7 @@
       "top_prize_remaining": 5,
       "pct_top_prizes_remaining": 100.0,
       "top6_adjusted_odds_now": 188.49,
-      "deal_score": 95.6,
+      "value_score_pct": 78.41,
       "tiers": [
         {
           "amount": 1000000,
@@ -619,7 +619,7 @@
       "top_prize_remaining": 5,
       "pct_top_prizes_remaining": 100.0,
       "top6_adjusted_odds_now": 85.36,
-      "deal_score": 94.3,
+      "value_score_pct": 80.72,
       "tiers": [
         {
           "amount": 4000000,
@@ -738,7 +738,7 @@
       "top_prize_remaining": 14,
       "pct_top_prizes_remaining": 93.3,
       "top6_adjusted_odds_now": 202.76,
-      "deal_score": 86.4,
+      "value_score_pct": 64.13,
       "tiers": [
         {
           "amount": 2500,
@@ -866,7 +866,7 @@
       "top_prize_remaining": 79,
       "pct_top_prizes_remaining": 79.0,
       "top6_adjusted_odds_now": 34.35,
-      "deal_score": 82.0,
+      "value_score_pct": 63.53,
       "tiers": [
         {
           "amount": 2000,
@@ -976,7 +976,7 @@
       "top_prize_remaining": 7,
       "pct_top_prizes_remaining": 87.5,
       "top6_adjusted_odds_now": 1388.58,
-      "deal_score": 85.4,
+      "value_score_pct": 73.4,
       "tiers": [
         {
           "amount": 250000,
@@ -1113,7 +1113,7 @@
       "top_prize_remaining": 9,
       "pct_top_prizes_remaining": 90.0,
       "top6_adjusted_odds_now": 681.04,
-      "deal_score": 89.4,
+      "value_score_pct": 73.15,
       "tiers": [
         {
           "amount": 150000,
@@ -1250,7 +1250,7 @@
       "top_prize_remaining": 6,
       "pct_top_prizes_remaining": 100.0,
       "top6_adjusted_odds_now": 158.42,
-      "deal_score": 96.0,
+      "value_score_pct": 75.04,
       "tiers": [
         {
           "amount": 750000,
@@ -1378,7 +1378,7 @@
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 80.0,
       "top6_adjusted_odds_now": 979.59,
-      "deal_score": 86.2,
+      "value_score_pct": 77.62,
       "tiers": [
         {
           "amount": 1500000,
@@ -1515,7 +1515,7 @@
       "top_prize_remaining": 6,
       "pct_top_prizes_remaining": 85.7,
       "top6_adjusted_odds_now": 89.44,
-      "deal_score": 87.3,
+      "value_score_pct": 65.55,
       "tiers": [
         {
           "amount": 17000,
@@ -1643,7 +1643,7 @@
       "top_prize_remaining": 8,
       "pct_top_prizes_remaining": 80.0,
       "top6_adjusted_odds_now": 264.18,
-      "deal_score": 82.7,
+      "value_score_pct": 68.6,
       "tiers": [
         {
           "amount": 30000,
@@ -1780,7 +1780,7 @@
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 80.0,
       "top6_adjusted_odds_now": 152.79,
-      "deal_score": 82.8,
+      "value_score_pct": 66.59,
       "tiers": [
         {
           "amount": 250000,
@@ -1899,7 +1899,7 @@
       "top_prize_remaining": 9,
       "pct_top_prizes_remaining": 69.2,
       "top6_adjusted_odds_now": 398.82,
-      "deal_score": 77.0,
+      "value_score_pct": 73.9,
       "tiers": [
         {
           "amount": 300000,
@@ -2027,7 +2027,7 @@
       "top_prize_remaining": 5,
       "pct_top_prizes_remaining": 100.0,
       "top6_adjusted_odds_now": 109.76,
-      "deal_score": 95.6,
+      "value_score_pct": 74.37,
       "tiers": [
         {
           "amount": 1000000,
@@ -2155,7 +2155,7 @@
       "top_prize_remaining": 17,
       "pct_top_prizes_remaining": 85.0,
       "top6_adjusted_odds_now": 86.41,
-      "deal_score": 85.4,
+      "value_score_pct": 78.03,
       "tiers": [
         {
           "amount": 1000000,
@@ -2274,7 +2274,7 @@
       "top_prize_remaining": 11,
       "pct_top_prizes_remaining": 55.0,
       "top6_adjusted_odds_now": 101.0,
-      "deal_score": 63.0,
+      "value_score_pct": 54.44,
       "tiers": [
         {
           "amount": 2500,
@@ -2393,7 +2393,7 @@
       "top_prize_remaining": 9,
       "pct_top_prizes_remaining": 45.0,
       "top6_adjusted_odds_now": 4444.44,
-      "deal_score": 60.5,
+      "value_score_pct": 70.77,
       "tiers": [
         {
           "amount": 100000,
@@ -2530,7 +2530,7 @@
       "top_prize_remaining": 3,
       "pct_top_prizes_remaining": 60.0,
       "top6_adjusted_odds_now": 213.03,
-      "deal_score": 73.5,
+      "value_score_pct": 67.44,
       "tiers": [
         {
           "amount": 1000000,
@@ -2658,7 +2658,7 @@
       "top_prize_remaining": 5,
       "pct_top_prizes_remaining": 71.4,
       "top6_adjusted_odds_now": 755.56,
-      "deal_score": 80.4,
+      "value_score_pct": 73.7,
       "tiers": [
         {
           "amount": 1000000,
@@ -2795,7 +2795,7 @@
       "top_prize_remaining": 2,
       "pct_top_prizes_remaining": 40.0,
       "top6_adjusted_odds_now": 503.57,
-      "deal_score": 54.4,
+      "value_score_pct": 61.44,
       "tiers": [
         {
           "amount": 10000,
@@ -2923,7 +2923,7 @@
       "top_prize_remaining": 16,
       "pct_top_prizes_remaining": 40.0,
       "top6_adjusted_odds_now": 806.45,
-      "deal_score": 58.9,
+      "value_score_pct": 64.51,
       "tiers": [
         {
           "amount": 5000,
@@ -3051,7 +3051,7 @@
       "top_prize_remaining": 6,
       "pct_top_prizes_remaining": 60.0,
       "top6_adjusted_odds_now": 2639.85,
-      "deal_score": 70.1,
+      "value_score_pct": 70.05,
       "tiers": [
         {
           "amount": 200000,
@@ -3188,7 +3188,7 @@
       "top_prize_remaining": 16380,
       "pct_top_prizes_remaining": 26.6,
       "top6_adjusted_odds_now": 10.49,
-      "deal_score": 54.1,
+      "value_score_pct": 20.93,
       "tiers": [
         {
           "amount": 100,
@@ -3262,7 +3262,7 @@
       "top_prize_remaining": 39548,
       "pct_top_prizes_remaining": 58.6,
       "top6_adjusted_odds_now": 4.84,
-      "deal_score": 74.1,
+      "value_score_pct": 46.42,
       "tiers": [
         {
           "amount": 250,
@@ -3336,7 +3336,7 @@
       "top_prize_remaining": 32293,
       "pct_top_prizes_remaining": 56.7,
       "top6_adjusted_odds_now": 4.77,
-      "deal_score": 74.0,
+      "value_score_pct": 45.54,
       "tiers": [
         {
           "amount": 500,
@@ -3410,7 +3410,7 @@
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 40.0,
       "top6_adjusted_odds_now": 198.71,
-      "deal_score": 54.7,
+      "value_score_pct": 55.1,
       "tiers": [
         {
           "amount": 5000,
@@ -3529,7 +3529,7 @@
       "top_prize_remaining": 7,
       "pct_top_prizes_remaining": 41.2,
       "top6_adjusted_odds_now": 792.21,
-      "deal_score": 57.7,
+      "value_score_pct": 55.59,
       "tiers": [
         {
           "amount": 10000,
@@ -3657,7 +3657,7 @@
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 26.7,
       "top6_adjusted_odds_now": 5669.29,
-      "deal_score": 49.5,
+      "value_score_pct": 63.92,
       "tiers": [
         {
           "amount": 130000,
@@ -3785,7 +3785,7 @@
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 80.0,
       "top6_adjusted_odds_now": 3792.33,
-      "deal_score": 81.3,
+      "value_score_pct": 71.92,
       "tiers": [
         {
           "amount": 250000,
@@ -3922,7 +3922,7 @@
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 40.0,
       "top6_adjusted_odds_now": 17647.06,
-      "deal_score": 58.4,
+      "value_score_pct": 72.12,
       "tiers": [
         {
           "amount": 500000,
@@ -4077,7 +4077,7 @@
       "top_prize_remaining": 3,
       "pct_top_prizes_remaining": 60.0,
       "top6_adjusted_odds_now": 1084.77,
-      "deal_score": 73.7,
+      "value_score_pct": 73.56,
       "tiers": [
         {
           "amount": 2500000,
@@ -4214,7 +4214,7 @@
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 25.0,
       "top6_adjusted_odds_now": 239.91,
-      "deal_score": 42.2,
+      "value_score_pct": 41.28,
       "tiers": [
         {
           "amount": 350000,
@@ -4333,7 +4333,7 @@
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 20.0,
       "top6_adjusted_odds_now": 153.92,
-      "deal_score": 40.6,
+      "value_score_pct": 36.27,
       "tiers": [
         {
           "amount": 20000,
@@ -4443,7 +4443,7 @@
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 20.0,
       "top6_adjusted_odds_now": 273.06,
-      "deal_score": 43.6,
+      "value_score_pct": 46.11,
       "tiers": [
         {
           "amount": 1600000,
@@ -4553,7 +4553,7 @@
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 66.7,
       "top6_adjusted_odds_now": 74.05,
-      "deal_score": 74.5,
+      "value_score_pct": 58.08,
       "tiers": [
         {
           "amount": 3200000,
@@ -4672,7 +4672,7 @@
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 80.0,
       "top6_adjusted_odds_now": 326.8,
-      "deal_score": 83.4,
+      "value_score_pct": 68.57,
       "tiers": [
         {
           "amount": 7250000,
@@ -4800,7 +4800,7 @@
       "top_prize_remaining": 2,
       "pct_top_prizes_remaining": 40.0,
       "top6_adjusted_odds_now": 80.95,
-      "deal_score": 57.6,
+      "value_score_pct": 63.23,
       "tiers": [
         {
           "amount": 14500000,
@@ -4910,7 +4910,7 @@
       "top_prize_remaining": 2,
       "pct_top_prizes_remaining": 40.0,
       "top6_adjusted_odds_now": 746.6,
-      "deal_score": 59.0,
+      "value_score_pct": 56.68,
       "tiers": [
         {
           "amount": 250000,
@@ -5029,7 +5029,7 @@
       "top_prize_remaining": 180,
       "pct_top_prizes_remaining": 8.5,
       "top6_adjusted_odds_now": 75.46,
-      "deal_score": 41.4,
+      "value_score_pct": 20.29,
       "tiers": [
         {
           "amount": 2500,
@@ -5121,7 +5121,7 @@
       "top_prize_remaining": 2,
       "pct_top_prizes_remaining": 40.0,
       "top6_adjusted_odds_now": 229.58,
-      "deal_score": 63.6,
+      "value_score_pct": 71.17,
       "tiers": [
         {
           "amount": 1000000,
@@ -5249,7 +5249,7 @@
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 40.0,
       "top6_adjusted_odds_now": 2121.21,
-      "deal_score": 56.0,
+      "value_score_pct": 61.62,
       "tiers": [
         {
           "amount": 50000,
@@ -5413,7 +5413,7 @@
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 5.0,
       "top6_adjusted_odds_now": 101052.63,
-      "deal_score": 29.1,
+      "value_score_pct": 64.25,
       "tiers": [
         {
           "amount": 100000,
@@ -5550,7 +5550,7 @@
       "top_prize_remaining": 3,
       "pct_top_prizes_remaining": 25.0,
       "top6_adjusted_odds_now": 98.04,
-      "deal_score": 50.2,
+      "value_score_pct": 51.52,
       "tiers": [
         {
           "amount": 500000,
@@ -5669,7 +5669,7 @@
       "top_prize_remaining": 5,
       "pct_top_prizes_remaining": 50.0,
       "top6_adjusted_odds_now": 1082.54,
-      "deal_score": 64.7,
+      "value_score_pct": 69.51,
       "tiers": [
         {
           "amount": 1500000,
@@ -5797,7 +5797,7 @@
       "top_prize_remaining": 0,
       "pct_top_prizes_remaining": 0.0,
       "top6_adjusted_odds_now": 245.09,
-      "deal_score": 29.2,
+      "value_score_pct": 47.1,
       "tiers": [
         {
           "amount": 200000,
@@ -5916,7 +5916,7 @@
       "top_prize_remaining": 5,
       "pct_top_prizes_remaining": 50.0,
       "top6_adjusted_odds_now": 261.14,
-      "deal_score": 63.1,
+      "value_score_pct": 63.54,
       "tiers": [
         {
           "amount": 500000,
@@ -6044,7 +6044,7 @@
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 20.0,
       "top6_adjusted_odds_now": 722.38,
-      "deal_score": 47.4,
+      "value_score_pct": 56.97,
       "tiers": [
         {
           "amount": 1000000,
@@ -6172,7 +6172,7 @@
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 10.0,
       "top6_adjusted_odds_now": 13253.01,
-      "deal_score": 35.2,
+      "value_score_pct": 62.13,
       "tiers": [
         {
           "amount": 200000,
@@ -6327,7 +6327,7 @@
       "top_prize_remaining": 456,
       "pct_top_prizes_remaining": 3.1,
       "top6_adjusted_odds_now": 307.3,
-      "deal_score": 1.9,
+      "value_score_pct": 2.18,
       "tiers": [
         {
           "amount": 500,
@@ -6383,7 +6383,7 @@
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 33.3,
       "top6_adjusted_odds_now": 1594.68,
-      "deal_score": 55.2,
+      "value_score_pct": 67.2,
       "tiers": [
         {
           "amount": 3000000,
@@ -6520,7 +6520,7 @@
       "top_prize_remaining": 6,
       "pct_top_prizes_remaining": 60.0,
       "top6_adjusted_odds_now": 1270.61,
-      "deal_score": 65.6,
+      "value_score_pct": 61.71,
       "tiers": [
         {
           "amount": 50000,
@@ -6666,7 +6666,7 @@
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 40.0,
       "top6_adjusted_odds_now": 1093.31,
-      "deal_score": 52.3,
+      "value_score_pct": 54.07,
       "tiers": [
         {
           "amount": 200000,
@@ -6794,7 +6794,7 @@
       "top_prize_remaining": 2,
       "pct_top_prizes_remaining": 20.0,
       "top6_adjusted_odds_now": 7471.98,
-      "deal_score": 41.1,
+      "value_score_pct": 51.16,
       "tiers": [
         {
           "amount": 155000,
@@ -6922,7 +6922,7 @@
       "top_prize_remaining": 2,
       "pct_top_prizes_remaining": 40.0,
       "top6_adjusted_odds_now": 2594.59,
-      "deal_score": 57.1,
+      "value_score_pct": 55.9,
       "tiers": [
         {
           "amount": 600000,
@@ -7050,7 +7050,7 @@
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 20.0,
       "top6_adjusted_odds_now": 1111.57,
-      "deal_score": 47.5,
+      "value_score_pct": 64.89,
       "tiers": [
         {
           "amount": 3000000,
@@ -7187,7 +7187,7 @@
       "top_prize_remaining": 3,
       "pct_top_prizes_remaining": 30.0,
       "top6_adjusted_odds_now": 162.21,
-      "deal_score": 51.6,
+      "value_score_pct": 55.03,
       "tiers": [
         {
           "amount": 500000,
@@ -7306,7 +7306,7 @@
       "top_prize_remaining": 2,
       "pct_top_prizes_remaining": 40.0,
       "top6_adjusted_odds_now": 546.88,
-      "deal_score": 60.2,
+      "value_score_pct": 59.35,
       "tiers": [
         {
           "amount": 3000000,
@@ -7434,7 +7434,7 @@
       "top_prize_remaining": 19,
       "pct_top_prizes_remaining": 38.0,
       "top6_adjusted_odds_now": 138.25,
-      "deal_score": 54.6,
+      "value_score_pct": 49.27,
       "tiers": [
         {
           "amount": 100000,
@@ -7535,7 +7535,7 @@
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 20.0,
       "top6_adjusted_odds_now": 9734.51,
-      "deal_score": 43.0,
+      "value_score_pct": 68.62,
       "tiers": [
         {
           "amount": 5000000,
@@ -7663,7 +7663,7 @@
       "top_prize_remaining": 3,
       "pct_top_prizes_remaining": 30.0,
       "top6_adjusted_odds_now": 544.59,
-      "deal_score": 46.8,
+      "value_score_pct": 55.87,
       "tiers": [
         {
           "amount": 200000,
@@ -7800,7 +7800,7 @@
       "top_prize_remaining": 3,
       "pct_top_prizes_remaining": 30.0,
       "top6_adjusted_odds_now": 433.41,
-      "deal_score": 52.0,
+      "value_score_pct": 60.0,
       "tiers": [
         {
           "amount": 500000,
@@ -7937,7 +7937,7 @@
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 20.0,
       "top6_adjusted_odds_now": 556.36,
-      "deal_score": 49.2,
+      "value_score_pct": 56.01,
       "tiers": [
         {
           "amount": 3000000,
@@ -8065,7 +8065,7 @@
       "top_prize_remaining": 2,
       "pct_top_prizes_remaining": 40.0,
       "top6_adjusted_odds_now": 557.84,
-      "deal_score": 61.5,
+      "value_score_pct": 64.94,
       "tiers": [
         {
           "amount": 3000000,
@@ -8211,7 +8211,7 @@
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 13.3,
       "top6_adjusted_odds_now": 1923.76,
-      "deal_score": 37.4,
+      "value_score_pct": 60.91,
       "tiers": [
         {
           "amount": 100000,
@@ -8339,7 +8339,7 @@
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 20.0,
       "top6_adjusted_odds_now": 1237.75,
-      "deal_score": 50.1,
+      "value_score_pct": 67.44,
       "tiers": [
         {
           "amount": 3000000,

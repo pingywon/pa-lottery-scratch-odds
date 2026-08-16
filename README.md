@@ -28,12 +28,22 @@ it was rejected as too cluttered). Columns:
 - **Winners Left** — top-prize remaining vs. original (e.g. "5 of 5"), with
   a bar that fills up as prizes get depleted (green ≥51% remaining, yellow
   26–50%, red ≤25%).
+- **Value Score** — expected payout per ticket, right now, as a % of price.
+  The single "best overall pick" ranking (default sort): higher = more of
+  your money you'd expect back on average. Built from the *complete* official
+  prize-tier table (every tier, not just the top 6), weighted by today's live
+  remaining counts wherever PA Lottery tracks one, falling back to each
+  tier's original day-one count where there's no live figure (documented
+  assumption — can only overstate value slightly, never understate it; see
+  `scrape.py`'s `build_game_record()` for the exact formula). Cross-checked
+  against a game's own official Bulletin-stated payout percentage on a
+  freshly-launched game (Ca$h Money) — computed 80.72% vs. the state's own
+  80.12%, a ~0.6-point difference for a game where almost nothing had been
+  claimed yet, which is the expected order of agreement.
 
-Expanding a row shows the complete official prize-tier table (every tier,
-not just the top 6), the game's actual ticket artwork front/back, and links
-to the official PA Lottery page and Bulletin filing. A `deal_score` field is
-still computed in `data.json` (60/40 blend of % top prizes remaining and
-published odds) for anyone who wants it, but it isn't surfaced in the UI.
+Expanding a row shows the complete official prize-tier table, the game's
+actual ticket artwork front/back, and links to the official PA Lottery page
+and Bulletin filing.
 
 Data only updates when someone clicks **Refresh Data** in the app — see
 "Refresh schedule" below.

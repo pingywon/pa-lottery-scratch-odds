@@ -213,6 +213,7 @@
         <th data-key="top6_adjusted_odds_now" class="num">Correct Odds <span class="arrow">↕</span></th>
         <th data-key="top_prize_amount" class="num">Top Prize <span class="arrow">↕</span></th>
         <th data-key="pct_top_prizes_remaining" class="num">Winners Left <span class="arrow">↕</span></th>
+        <th data-key="value_score_pct" class="num">Value Score <span class="arrow">↕</span></th>
       </tr>
     </thead>
     <tbody id="tbody"></tbody>
@@ -224,7 +225,7 @@
 <script>
 let GAMES = [];
 let META = {};
-const state = { search: "", price: "", sortKey: "pct_top_prizes_remaining", sortDir: -1, open: new Set() };
+const state = { search: "", price: "", sortKey: "value_score_pct", sortDir: -1, open: new Set() };
 
 async function load() {
   const res = await fetch('/api/games.json');
@@ -247,7 +248,11 @@ function renderFreshness() {
     `<b>Total Game Odds</b> = the official published odds of winning any prize. ` +
     `<b>Correct Odds</b> = odds recalculated right now from the exact original ticket count (each game's official ` +
     `Pennsylvania Bulletin filing) and the live remaining count, for the 6 prize tiers PA Lottery tracks in real time — ` +
-    `exact, not estimated, but only covers those 6 tiers since smaller prizes aren't publicly tracked live.`;
+    `exact, not estimated, but only covers those 6 tiers since smaller prizes aren't publicly tracked live. ` +
+    `<b>Value Score</b> = expected payout per ticket right now, as a % of price — the higher the number, the more of ` +
+    `your money you'd expect back on average. Uses today's live remaining counts for the 6 tracked tiers; smaller ` +
+    `prize tiers (not live-tracked) are assumed to still be at their original day-one count, since there's no live ` +
+    `figure for those — a documented assumption that can only overstate value slightly, never understate it.`;
 }
 
 function buildPriceOptions() {
@@ -344,6 +349,7 @@ function renderRow(g) {
       <div class="winleft-text"><span>${g.top_prize_remaining ?? '?'} of ${g.top_prize_original ?? '?'}</span><b>${pct == null ? '—' : pct + '%'}</b></div>
       <div class="bar"><div class="bar-fill ${pctClass(pct)}" style="width:${pct == null ? 0 : 100 - pct}%"></div></div>
     </td>
+    <td class="num" data-label="Value Score">${g.value_score_pct == null ? '—' : g.value_score_pct + '%'}</td>
   `;
   tr.addEventListener('click', () => toggleDetail(g.id));
   return tr;
@@ -355,7 +361,7 @@ function renderDetailRow(g) {
   tr.id = `detail-${g.id}`;
   if (state.open.has(g.id)) tr.classList.add('open');
   const td = document.createElement('td');
-  td.colSpan = 7;
+  td.colSpan = 8;
   const tiersRows = (g.tiers || []).map(t => `
     <tr class="${t.tracked_live ? '' : 'untracked'}">
       <td>${money(t.amount)}</td>

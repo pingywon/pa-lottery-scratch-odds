@@ -301,12 +301,27 @@ def build_game_record(roster_entry, detail, bulletin_total_tickets, bulletin_tie
         if remaining_sum > 0:
             top6_adjusted_odds_now = round(bulletin_total_tickets / remaining_sum, 2)
 
-    overall_odds_published = detail.get("overall_odds_published")
-    deal_score_inputs = {
-        "pct_top_prizes_remaining": pct_top_prizes_remaining,
-        "overall_odds_published": overall_odds_published,
-    }
+    # Value score: expected payout per ticket, right now, as a % of price.
+    # For each tier, use today's live remaining count where PA Lottery tracks
+    # one (the top 6); for smaller/common tiers with no live number, assume
+    # the original day-one count still holds (the best available estimate,
+    # documented as an assumption - it can only overstate value slightly,
+    # since untracked small prizes do get claimed over time too, we just
+    # can't see how much). 100% would mean "expected to pay back every
+    # dollar wagered, on average" - real games run well under that by design.
+    value_score_pct = None
+    if bulletin_total_tickets and price:
+        payout_sum = 0
+        have_tier_data = False
+        for t in tiers:
+            count = t["remaining"] if t["tracked_live"] else t["original"]
+            if count is not None:
+                payout_sum += count * t["amount"]
+                have_tier_data = True
+        if have_tier_data:
+            value_score_pct = round(100 * (payout_sum / bulletin_total_tickets) / price, 2)
 
+    overall_odds_published = detail.get("overall_odds_published")
     badges = dict(roster_entry.get("badges") or {})
 
     return {
@@ -321,8 +336,7 @@ def build_game_record(roster_entry, detail, bulletin_total_tickets, bulletin_tie
         "top_prize_remaining": top_prize_remaining,
         "pct_top_prizes_remaining": pct_top_prizes_remaining,
         "top6_adjusted_odds_now": top6_adjusted_odds_now,
-        "deal_score": None,  # filled in after normalization ranges are known
-        "_deal_score_inputs": deal_score_inputs,
+        "value_score_pct": value_score_pct,
         "tiers": tiers,
         "badges": badges,
         "images": {
@@ -332,32 +346,6 @@ def build_game_record(roster_entry, detail, bulletin_total_tickets, bulletin_tie
         "detail_url": DETAIL_URL_FMT.format(roster_entry["id"]),
         "bulletin_url": detail.get("bulletin_url"),
     }
-
-
-def compute_deal_scores(games):
-    """Mutates games in place. Carried-over stale records (no
-    _deal_score_inputs key, from a failed re-scrape) keep their prior
-    deal_score untouched rather than being recomputed against this run's
-    odds range."""
-    scored = [g for g in games if "_deal_score_inputs" in g]
-    odds_values = [
-        g["_deal_score_inputs"]["overall_odds_published"]
-        for g in scored
-        if g["_deal_score_inputs"]["overall_odds_published"] is not None
-    ]
-    max_odds = max(odds_values) if odds_values else None
-    min_odds = min(odds_values) if odds_values else None
-    span = (max_odds - min_odds) if odds_values else None
-    span = span or 1.0
-    for g in scored:
-        inputs = g.pop("_deal_score_inputs")
-        pct = inputs["pct_top_prizes_remaining"]
-        odds = inputs["overall_odds_published"]
-        if pct is None or odds is None or max_odds is None:
-            continue
-        pct_norm = pct / 100
-        odds_norm = (max_odds - odds) / span
-        g["deal_score"] = round(100 * (0.6 * pct_norm + 0.4 * odds_norm), 1)
 
 
 # ---------------------------------------------------------------------------
@@ -433,8 +421,6 @@ def _run():
                 stale = dict(previous_by_id[gid])
                 games.append(stale)
                 log(f"  [{gid}] kept previous cached record")
-
-    compute_deal_scores(games)
 
     success_count = len(roster) - failures
     if previous and success_count < MIN_SUCCESS_RATIO * previous.get("game_count", 0):
