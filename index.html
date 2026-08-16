@@ -64,8 +64,20 @@
   }
   .controls input[type="search"]::placeholder { color: #93a5b8; }
   .controls input[type="search"] { flex: 1 1 220px; }
+  #refreshBtn {
+    padding: 8px 14px;
+    border: 1px solid var(--gold);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background: var(--gold);
+    color: #1a1400;
+    cursor: pointer;
+  }
+  #refreshBtn:disabled { opacity: 0.55; cursor: default; }
+  #refreshStatus { margin-bottom: 0; color: #d8e2ec; }
 
-  main { max-width: 1300px; margin: 20px auto 40px; padding: 0 20px; }
+  main { max-width: 1500px; margin: 20px auto 40px; padding: 0 20px; }
   #resultBar { color: var(--text-dim); font-size: 0.8rem; margin-bottom: 8px; }
 
   table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
@@ -123,7 +135,57 @@
   .detail-links a { color: var(--navy); font-weight: 600; text-decoration: none; margin-left: 12px; }
   .detail-links a:hover { text-decoration: underline; }
 
-  footer { max-width: 1300px; margin: 18px auto 30px; padding: 0 20px; color: var(--text-dim); font-size: 0.72rem; line-height: 1.5; }
+  footer { max-width: 1500px; margin: 18px auto 30px; padding: 0 20px; color: var(--text-dim); font-size: 0.72rem; line-height: 1.5; }
+
+  /* ---------- mobile: plain, stacked, to the point ---------- */
+  @media (max-width: 700px) {
+    header { padding: 14px 16px; }
+    header h1 { font-size: 1.2rem; }
+    header .sub { font-size: 0.72rem; }
+    .controls input[type="search"] { flex: 1 1 100%; }
+    #refreshBtn { flex: 1 1 auto; }
+    main { padding: 0 10px; margin: 14px auto 30px; }
+
+    table, thead, tbody { display: block; width: 100%; }
+    thead { display: none; }
+    tbody tr.game-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      padding: 10px 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    td.thumb { display: block; width: 40px; flex: 0 0 40px; padding: 0; }
+    td.thumb img, td.thumb .noimg { width: 40px; height: 56px; }
+    td.name-cell { display: block; flex: 1 1 calc(100% - 50px); padding: 0 0 6px 10px; }
+    td.num {
+      display: block;
+      flex: 1 1 46%;
+      padding: 6px 0 0;
+      font-size: 0.82rem;
+      text-align: left;
+    }
+    td.num::before {
+      content: attr(data-label);
+      display: block;
+      color: var(--text-dim);
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      font-weight: 600;
+      margin-bottom: 1px;
+    }
+    td.winleft-cell { flex: 1 1 100%; min-width: 0; }
+
+    tr.detail-row td { padding: 0; }
+    .detail-wrap { padding: 10px 0 14px; }
+    .detail-wrap table, .detail-wrap thead, .detail-wrap tbody, .detail-wrap tr, .detail-wrap td { display: revert; }
+    .detail-wrap thead { display: table-header-group; }
+    .detail-scroll { overflow-x: auto; padding: 0 12px; }
+    .detail-wrap table { min-width: 480px; }
+    .detail-foot { flex-direction: column; padding: 0 12px; }
+    .detail-links a { margin-left: 0; margin-right: 14px; }
+  }
 </style>
 </head>
 <body>
@@ -134,6 +196,8 @@
   <div class="controls">
     <input type="search" id="search" placeholder="Search by name or game number…">
     <select id="priceFilter"><option value="">All prices</option></select>
+    <button id="refreshBtn" type="button">Refresh Data</button>
+    <span class="sub" id="refreshStatus"></span>
   </div>
 </header>
 
@@ -254,8 +318,11 @@ function render() {
 }
 
 function pctClass(pct) {
+  // Buckets are based on % of top prizes REMAINING: >=51% green, 26-50% yellow, <=25% red.
   if (pct == null) return '';
-  return pct >= 50 ? '' : pct >= 15 ? 'mid' : 'low';
+  if (pct <= 25) return 'low';
+  if (pct < 51) return 'mid';
+  return '';
 }
 
 function renderRow(g) {
@@ -269,13 +336,13 @@ function renderRow(g) {
       <div class="name">${g.name || 'Unnamed game'}${g.badges && g.badges.new ? '<span class="new-tag">NEW</span>' : ''}</div>
       <div class="gamenum">${g.game_number || ''}</div>
     </td>
-    <td class="num">$${g.price ?? '?'}</td>
-    <td class="num">${oddsText(g.overall_odds_published)}</td>
-    <td class="num">${oddsText(g.top6_adjusted_odds_now)}</td>
-    <td class="num">${money(g.top_prize_amount)}</td>
-    <td class="num winleft-cell">
+    <td class="num" data-label="Price">$${g.price ?? '?'}</td>
+    <td class="num" data-label="Total Game Odds">${oddsText(g.overall_odds_published)}</td>
+    <td class="num" data-label="Correct Odds">${oddsText(g.top6_adjusted_odds_now)}</td>
+    <td class="num" data-label="Top Prize">${money(g.top_prize_amount)}</td>
+    <td class="num winleft-cell" data-label="Winners Left">
       <div class="winleft-text"><span>${g.top_prize_remaining ?? '?'} of ${g.top_prize_original ?? '?'}</span><b>${pct == null ? '—' : pct + '%'}</b></div>
-      <div class="bar"><div class="bar-fill ${pctClass(pct)}" style="width:${pct ?? 0}%"></div></div>
+      <div class="bar"><div class="bar-fill ${pctClass(pct)}" style="width:${pct == null ? 0 : 100 - pct}%"></div></div>
     </td>
   `;
   tr.addEventListener('click', () => toggleDetail(g.id));
@@ -298,10 +365,12 @@ function renderDetailRow(g) {
     </tr>`).join('');
   td.innerHTML = `
     <div class="detail-wrap">
-      <table>
-        <thead><tr><th>Prize</th><th>Total prizes</th><th>Winners left (live)</th><th>Correct odds</th></tr></thead>
-        <tbody>${tiersRows}</tbody>
-      </table>
+      <div class="detail-scroll">
+        <table>
+          <thead><tr><th>Prize</th><th>Total prizes</th><th>Winners left (live)</th><th>Correct odds</th></tr></thead>
+          <tbody>${tiersRows}</tbody>
+        </table>
+      </div>
       <div class="detail-foot">
         <div class="detail-note">
           "Total prizes" is each tier's original count from the game's official state filing. Rows marked
@@ -326,6 +395,50 @@ function toggleDetail(id) {
   const row = document.getElementById(`detail-${id}`);
   if (row) row.classList.toggle('open');
 }
+
+const refreshBtn = document.getElementById('refreshBtn');
+const refreshStatus = document.getElementById('refreshStatus');
+
+async function startRefresh() {
+  refreshBtn.disabled = true;
+  refreshStatus.textContent = 'Refreshing… usually takes 2–3 min';
+  try {
+    const res = await fetch('/api/refresh', { method: 'POST' });
+    if (res.status === 409) {
+      refreshStatus.textContent = 'Already refreshing (started elsewhere)… waiting for it to finish';
+    } else if (!res.ok) {
+      throw new Error(`refresh request failed: ${res.status}`);
+    }
+  } catch (e) {
+    refreshStatus.textContent = 'Could not start refresh — try again';
+    refreshBtn.disabled = false;
+    return;
+  }
+  pollRefresh();
+}
+
+async function pollRefresh(attempt = 0) {
+  let running = true;
+  try {
+    const res = await fetch('/api/refresh-status');
+    const data = await res.json();
+    running = data.running;
+  } catch (e) {
+    running = true; // network hiccup — keep waiting rather than declaring done early
+  }
+  // Ignore "not running" on the first couple of checks in case we're polling
+  // before the freshly-spawned scraper has written its lock file yet.
+  if (running || attempt < 2) {
+    setTimeout(() => pollRefresh(attempt + 1), 3000);
+    return;
+  }
+  refreshStatus.textContent = 'Done — reloading…';
+  await load();
+  refreshBtn.disabled = false;
+  refreshStatus.textContent = '';
+}
+
+refreshBtn.addEventListener('click', startRefresh);
 
 load();
 </script>

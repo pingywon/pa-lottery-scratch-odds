@@ -7,7 +7,8 @@ locally-cached ticket images. No framework, no pip installs.
 import json
 import mimetypes
 import os
-import socketserver
+import subprocess
+import sys
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -16,9 +17,31 @@ ROOT = Path(__file__).resolve().parent
 DATA_FILE = ROOT / "data.json"
 IMAGES_DIR = ROOT / "images"
 INDEX_FILE = ROOT / "index.html"
+SCRAPE_SCRIPT = ROOT / "scrape.py"
+LOCK_FILE = ROOT / "scrape.lock"
 
 PORT = int(os.environ.get("PORT", "8789"))
 BIND = os.environ.get("BIND", "0.0.0.0")
+
+
+def pid_alive(pid):
+    try:
+        os.kill(pid, 0)
+        return True
+    except ProcessLookupError:
+        return False
+    except PermissionError:
+        return True  # process exists, just owned by someone else
+
+
+def scrape_running():
+    if not LOCK_FILE.exists():
+        return False
+    try:
+        pid = int(LOCK_FILE.read_text().strip())
+    except (ValueError, OSError):
+        return False
+    return pid_alive(pid)
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -62,6 +85,11 @@ class Handler(BaseHTTPRequestHandler):
             )
             return
 
+        if path == "/api/refresh-status":
+            body = json.dumps({"running": scrape_running()}).encode()
+            self._send(HTTPStatus.OK, body, "application/json", {"Cache-Control": "no-store"})
+            return
+
         if path == "/health":
             games = 0
             scraped_at = None
@@ -93,6 +121,21 @@ class Handler(BaseHTTPRequestHandler):
                 HTTPStatus.OK, candidate.read_bytes(), ctype,
                 {"Cache-Control": "public, max-age=604800"},
             )
+            return
+
+        self._send(HTTPStatus.NOT_FOUND, b"not found", "text/plain")
+
+    def do_POST(self):
+        path = self.path.split("?", 1)[0]
+
+        if path == "/api/refresh":
+            if scrape_running():
+                body = json.dumps({"status": "already_running"}).encode()
+                self._send(HTTPStatus.CONFLICT, body, "application/json")
+                return
+            subprocess.Popen([sys.executable, str(SCRAPE_SCRIPT)], cwd=str(ROOT))
+            body = json.dumps({"status": "started"}).encode()
+            self._send(HTTPStatus.ACCEPTED, body, "application/json")
             return
 
         self._send(HTTPStatus.NOT_FOUND, b"not found", "text/plain")

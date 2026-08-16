@@ -9,6 +9,7 @@ rather than estimated.
 """
 import html
 import json
+import os
 import re
 import sys
 import time
@@ -30,6 +31,40 @@ MIN_IMAGE_BYTES = 5 * 1024
 ROOT = Path(__file__).resolve().parent
 DATA_FILE = ROOT / "data.json"
 IMAGES_DIR = ROOT / "images"
+LOCK_FILE = ROOT / "scrape.lock"
+
+
+def pid_alive(pid):
+    try:
+        os.kill(pid, 0)
+        return True
+    except ProcessLookupError:
+        return False
+    except PermissionError:
+        return True  # process exists, just owned by someone else
+
+
+def acquire_lock():
+    """Cooperative lock so a manually-triggered refresh (server.py) and the
+    daily systemd timer can't run concurrently and double-hit palottery.pa.gov.
+    Guards regardless of which of the two spawned this process."""
+    if LOCK_FILE.exists():
+        try:
+            existing_pid = int(LOCK_FILE.read_text().strip())
+        except (ValueError, OSError):
+            existing_pid = None
+        if existing_pid and pid_alive(existing_pid):
+            log(f"Another scrape is already running (pid {existing_pid}) — exiting")
+            sys.exit(2)
+        log("Found stale lock file from a dead process — reclaiming it")
+    LOCK_FILE.write_text(str(os.getpid()))
+
+
+def release_lock():
+    try:
+        LOCK_FILE.unlink(missing_ok=True)
+    except OSError:
+        pass
 
 BADGE_ALTS = {
     "second_chance": "Second Chance Eligible",
@@ -339,6 +374,14 @@ def load_previous():
 
 
 def main():
+    acquire_lock()
+    try:
+        _run()
+    finally:
+        release_lock()
+
+
+def _run():
     log(f"Fetching roster: {ACTIVE_URL}")
     roster = parse_active_games(fetch(ACTIVE_URL))
     log(f"Found {len(roster)} active games")
