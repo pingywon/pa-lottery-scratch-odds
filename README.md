@@ -10,26 +10,33 @@ project built entirely on public pages at palottery.pa.gov.
 
 ## What this is
 
-For each active game, the app shows three distinct odds figures rather than
-one ambiguous number:
+A dense, sortable **table** — one row per active game, small ticket
+thumbnail, click any column header to sort, click a row to expand the full
+prize-tier breakdown. Deliberately not a card grid (an earlier version was;
+it was rejected as too cluttered). Columns:
 
-1. **Odds of winning any prize (published)** — the official static figure
-   PA Lottery prints on the game's page (e.g. "1 in 3.63").
-2. **Adjusted top-prize odds (live)** — recalculated right now using the
-   game's *exact* original ticket count (pulled from its official
-   Pennsylvania Bulletin regulatory filing) and the *live* remaining count
-   for the 6 prize tiers PA Lottery actually tracks in real time. This is an
-   exact calculation, not an estimate — but it's honestly scoped to just
-   those 6 tiers, since PA Lottery doesn't publish live remaining counts for
-   every smaller/common prize.
-3. **% of top prizes remaining** (e.g. "5 of 5", shown as a progress bar) —
-   the simplest, most literal "are there still big prizes left" signal.
+- **Price** — ticket cost.
+- **Total Game Odds** — the official published odds of winning *any* prize
+  (e.g. "1 in 3.63"), as PA Lottery prints it.
+- **Correct Odds** — recalculated *right now* using the game's *exact*
+  original ticket count (pulled from its official Pennsylvania Bulletin
+  regulatory filing) and the *live* remaining count, for the 6 prize tiers
+  PA Lottery actually tracks in real time. An exact calculation, not an
+  estimate — but honestly scoped to just those 6 tiers, since PA Lottery
+  doesn't publish live remaining counts for every smaller/common prize.
+- **Top Prize** — the top prize amount.
+- **Winners Left** — top-prize remaining vs. original (e.g. "5 of 5"), with
+  a bar that fills up as prizes get depleted (green ≥51% remaining, yellow
+  26–50%, red ≤25%).
 
-A **deal score** (0–100) blends (3) and (1) — weighted 60/40 toward "top
-prizes still remaining" — into a single one-click "Best Deals" sort.
+Expanding a row shows the complete official prize-tier table (every tier,
+not just the top 6), the game's actual ticket artwork front/back, and links
+to the official PA Lottery page and Bulletin filing. A `deal_score` field is
+still computed in `data.json` (60/40 blend of % top prizes remaining and
+published odds) for anyone who wants it, but it isn't surfaced in the UI.
 
-Every card uses the game's actual scratch-ticket artwork (front and back),
-scraped directly from PA Lottery's own image hosting.
+Data only updates when someone clicks **Refresh Data** in the app — see
+"Refresh schedule" below.
 
 ## Quick start
 
@@ -51,6 +58,8 @@ Then open `http://<this-machine>:8789/`.
 
 - `GET /` — the app (single-page, vanilla JS/CSS, no build step)
 - `GET /api/games.json` — the current scraped dataset, verbatim
+- `POST /api/refresh` — starts a scrape in the background (202 if started, 409 if one's already running); the UI's "Refresh Data" button calls this
+- `GET /api/refresh-status` — `{"running": bool}`, polled by the UI while a refresh is in progress
 - `GET /images/<path>` — locally-cached ticket art
 - `GET /health` — `{"ok": true, "games": N, "scraped_at": "..."}`
 
@@ -100,28 +109,42 @@ Unit files are in `deploy/` (reference copies — install them to
 `/etc/systemd/system/` to actually run):
 
 ```bash
-sudo cp deploy/pa-lottery-scratch-odds.service deploy/pa-lottery-scratch-odds-scrape.service deploy/pa-lottery-scratch-odds-scrape.timer /etc/systemd/system/
+sudo cp deploy/pa-lottery-scratch-odds.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable --now pa-lottery-scratch-odds.service
-sudo systemctl enable --now pa-lottery-scratch-odds-scrape.timer
 ```
 
 Run `scrape.py` manually once before first starting the web service, so
 `data.json` exists — the server tolerates a missing `data.json` (shows an
 empty board) but there's no reason to start it empty.
 
+`deploy/pa-lottery-scratch-odds-scrape.service` + `.timer` (a daily
+06:30-ish auto-refresh) also exist in `deploy/` but are **not installed by
+design** — refreshing is on-demand only, via the app's own "Refresh Data"
+button (`POST /api/refresh`). If you ever want the daily timer back:
+`sudo cp deploy/pa-lottery-scratch-odds-scrape.service deploy/pa-lottery-scratch-odds-scrape.timer /etc/systemd/system/ && sudo systemctl daemon-reload && sudo systemctl enable --now pa-lottery-scratch-odds-scrape.timer`.
+
 ## Refresh schedule
 
-The scrape timer runs once daily (06:30 + up to 10 min random jitter) since
-PA Lottery's own "wins remaining" data itself is only updated roughly daily.
-The server re-reads `data.json` from disk on every request, so a fresh
-scrape shows up on the very next page load — no restart needed.
+**On-demand only** — there is no automatic background refresh. Data updates
+only when someone clicks "Refresh Data" in the app (or runs `python3
+scrape.py` / `POST /api/refresh` directly). This was a deliberate choice:
+PA Lottery's own "wins remaining" figures are themselves only updated
+irregularly (the app shows their own "as of" date so you can tell), so a
+scheduled daily scrape was mostly re-fetching identical data — an on-demand
+button avoids the unnecessary traffic to palottery.pa.gov and puts the
+owner in control of when a refresh happens. A `scrape.lock` PID file
+(managed by `scrape.py`) still guards against two refreshes running at once,
+in case the daily timer is ever re-enabled alongside manual refreshes. The
+server re-reads `data.json` from disk on every request, so a fresh scrape
+shows up on the very next page load — no restart needed.
 
 ## Honest caveats
 
 - Unofficial — not affiliated with or endorsed by the Pennsylvania Lottery.
 - Data is scraped from public palottery.pa.gov and pacodeandbulletin.gov
-  pages and may lag the live site by up to a day.
+  pages and only updates when someone clicks "Refresh Data" (no automatic
+  background refresh — see "Refresh schedule" above).
 - "Deal score" is this project's own weighted heuristic, not an official
   PA Lottery ranking.
 - Ticket images are cached locally for the app to display but are **not**
