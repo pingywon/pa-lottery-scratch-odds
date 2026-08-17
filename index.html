@@ -48,6 +48,8 @@
     font-size: 0.78rem;
     margin-bottom: 14px;
   }
+  header #freshness { margin-bottom: 2px; }
+  .value-score-note { font-style: italic; opacity: 0.85; }
   .controls {
     display: flex;
     flex-wrap: wrap;
@@ -193,6 +195,7 @@
 <header>
   <h1>PA Lottery Scratch Odds</h1>
   <div class="sub" id="freshness">Loading…</div>
+  <div class="sub value-score-note">Value Score = expected % of your ticket price paid back, based on today's live prize counts. Higher is better.</div>
   <div class="controls">
     <input type="search" id="search" placeholder="Search by name or game number…">
     <select id="priceFilter"><option value="">All prices</option></select>
