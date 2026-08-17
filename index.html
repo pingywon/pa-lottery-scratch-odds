@@ -184,7 +184,7 @@
     .detail-wrap table, .detail-wrap thead, .detail-wrap tbody, .detail-wrap tr, .detail-wrap td { display: revert; }
     .detail-wrap thead { display: table-header-group; }
     .detail-scroll { overflow-x: auto; padding: 0 12px; }
-    .detail-wrap table { min-width: 480px; }
+    .detail-wrap table { min-width: 560px; }
     .detail-foot { flex-direction: column; padding: 0 12px; }
     .detail-links a { margin-left: 0; margin-right: 14px; }
   }
@@ -370,21 +370,23 @@ function renderDetailRow(g) {
       <td>${money(t.amount)}</td>
       <td>${t.original != null ? t.original.toLocaleString() : '—'}${t.original_understated ? ' <span class="flag">*</span>' : ''}</td>
       <td>${t.tracked_live ? (t.remaining != null ? t.remaining.toLocaleString() : '—') : 'not tracked live'}</td>
-      <td>${t.tracked_live ? oddsText(t.adjusted_odds_now) : oddsText(t.published_odds)}</td>
+      <td>${oddsText(t.published_odds)}</td>
+      <td>${t.tracked_live ? oddsText(t.adjusted_odds_now) : '—'}</td>
     </tr>`).join('');
   td.innerHTML = `
     <div class="detail-wrap">
       <div class="detail-scroll">
         <table>
-          <thead><tr><th>Prize</th><th>Total prizes</th><th>Winners left (live)</th><th>Correct odds</th></tr></thead>
+          <thead><tr><th>Prize</th><th>Total prizes</th><th>Winners left (live)</th><th>Published odds</th><th>Correct odds (live)</th></tr></thead>
           <tbody>${tiersRows}</tbody>
         </table>
       </div>
       <div class="detail-foot">
         <div class="detail-note">
-          "Total prizes" is each tier's original count from the game's official state filing. Rows marked
-          "not tracked live" show published odds only — PA Lottery doesn't publish live remaining counts below
-          the top 6 tiers. <span class="flag">*</span> = this tier's live remaining count is higher than the
+          "Total prizes" is each tier's original count from the game's official state filing. "Published odds" is
+          that tier's day-one official odds and is always shown. "Correct odds (live)" only exists for the top 6
+          tiers PA Lottery tracks live — it's a dash ("—") for the rest, since there's no live remaining count to
+          recalculate from. <span class="flag">*</span> = this tier's live remaining count is higher than the
           state's pre-launch estimate (production sometimes runs larger than announced for common prize tiers) —
           Correct Odds is unaffected since it's computed straight from total tickets printed and today's remaining count.
         </div>
