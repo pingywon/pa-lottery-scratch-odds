@@ -136,18 +136,46 @@ button (`POST /api/refresh`). If you ever want the daily timer back:
 
 ## Refresh schedule
 
-**On-demand only** — there is no automatic background refresh. Data updates
-only when someone clicks "Refresh Data" in the app (or runs `python3
-scrape.py` / `POST /api/refresh` directly). This was a deliberate choice:
-PA Lottery's own "wins remaining" figures are themselves only updated
-irregularly (the app shows their own "as of" date so you can tell), so a
-scheduled daily scrape was mostly re-fetching identical data — an on-demand
-button avoids the unnecessary traffic to palottery.pa.gov and puts the
-owner in control of when a refresh happens. A `scrape.lock` PID file
-(managed by `scrape.py`) still guards against two refreshes running at once,
-in case the daily timer is ever re-enabled alongside manual refreshes. The
-server re-reads `data.json` from disk on every request, so a fresh scrape
-shows up on the very next page load — no restart needed.
+**On-demand, or automatically when PA Lottery actually updates** — there's no
+blind scheduled re-scrape. Data refreshes when: someone clicks "Refresh Data"
+in the app, `POST /api/refresh` is called directly, or the watchdog (below)
+detects PA Lottery has genuinely posted new numbers. A `scrape.lock` PID file
+(managed by `scrape.py`) guards against two scrapes running at once, no
+matter which of these triggered it. The server re-reads `data.json` from
+disk on every request, so a fresh scrape shows up on the very next page
+load — no restart needed.
+
+## Watchdog (`watchdog.py`)
+
+PA Lottery only updates their own "wins remaining" figures irregularly —
+observed no change at all for 5+ days straight. Rather than re-scrape all
+~140 pages on a fixed schedule (which would just refetch identical data most
+of the time), `watchdog.py` checks *one* lightweight page — the freshness
+stamp on `prizes-remaining.aspx` — every 15 minutes via
+`pa-lottery-scratch-odds-watchdog.timer`. When that stamp actually moves:
+
+1. Emails **pingywon@gmail.com** (via the existing Brevo SMTP relay) that
+   new data is available.
+2. Triggers a full `scrape.py` run in the background (same non-blocking
+   `subprocess.Popen` pattern as the "Refresh Data" button).
+3. Records the new stamp in `watchdog_state.json` (gitignored, local state
+   only) so it doesn't re-alert on the same update.
+
+**SMS is not wired up** — AT&T's `txt.att.net` email-to-SMS gateway was
+permanently shut down 2025-06-17 (confirmed by a real failed test send here:
+Brevo relayed the message cleanly with no SMTP error, but nothing ever
+arrived — silent-drop is that gateway's documented post-shutdown behavior).
+Real SMS requires registering the existing Telnyx number for A2P 10DLC
+messaging, a multi-day carrier approval process. Once that's approved, add
+an SMS send back into `watchdog.py`'s change-detected branch (there's a
+comment marking exactly where).
+
+Install alongside the main service:
+```bash
+sudo cp deploy/pa-lottery-scratch-odds-watchdog.service deploy/pa-lottery-scratch-odds-watchdog.timer /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable --now pa-lottery-scratch-odds-watchdog.timer
+```
 
 ## Honest caveats
 

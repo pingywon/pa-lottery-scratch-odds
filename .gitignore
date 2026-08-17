@@ -5,3 +5,4 @@ __pycache__/
 images/
 .claude/
 scrape.lock
+watchdog_state.json

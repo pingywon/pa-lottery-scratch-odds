@@ -1,0 +1,13 @@
+[Unit]
+Description=PA Lottery Scratch Odds — watch for PA Lottery updating their wins-remaining data
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=pingywon
+Group=pingywon
+WorkingDirectory=/home/pingywon/pa-lottery-scratch-odds
+ExecStart=/usr/bin/python3 /home/pingywon/pa-lottery-scratch-odds/watchdog.py
+NoNewPrivileges=true
+PrivateTmp=true
