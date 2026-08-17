@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-08-16T18:23:22Z",
+  "scraped_at": "2026-08-17T17:32:03Z",
   "prizes_remaining_as_of": "August 11, 2026",
-  "game_count": 68,
+  "game_count": 67,
   "games": [
     {
       "id": 3375,
@@ -3635,7 +3635,7 @@
         "second_chance": false,
         "online_game": false,
         "fast_play": false,
-        "sales_ending_soon": false,
+        "sales_ending_soon": true,
         "new": false
       },
       "images": {
@@ -4421,7 +4421,7 @@
         "second_chance": false,
         "online_game": false,
         "fast_play": false,
-        "sales_ending_soon": false,
+        "sales_ending_soon": true,
         "new": false
       },
       "images": {
@@ -5528,7 +5528,7 @@
         "second_chance": false,
         "online_game": false,
         "fast_play": false,
-        "sales_ending_soon": false,
+        "sales_ending_soon": true,
         "new": false
       },
       "images": {
@@ -5784,125 +5784,6 @@
       },
       "detail_url": "https://www.palottery.pa.gov/Scratch-Offs/View-Scratch-Off.aspx?id=3324",
       "bulletin_url": "https://www.pacodeandbulletin.gov/Display/pabull?file=/secure/pabulletin/data/vol55/55-38/1304.html"
-    },
-    {
-      "id": 3322,
-      "game_number": "PA-1748",
-      "name": "Money Maker",
-      "price": 5,
-      "overall_odds_published": 4.45,
-      "total_tickets_printed": 12000000,
-      "top_prize_amount": 200000,
-      "top_prize_original": 10,
-      "top_prize_remaining": 0,
-      "pct_top_prizes_remaining": 0.0,
-      "top6_adjusted_odds_now": 245.09,
-      "value_score_pct": 47.1,
-      "tiers": [
-        {
-          "amount": 200000,
-          "original": 10,
-          "original_understated": false,
-          "published_odds": 1200000.0,
-          "remaining": 0,
-          "adjusted_odds_now": null,
-          "tracked_live": true
-        },
-        {
-          "amount": 1000,
-          "original": 60,
-          "original_understated": false,
-          "published_odds": 200000.0,
-          "remaining": 14,
-          "adjusted_odds_now": 857142.86,
-          "tracked_live": true
-        },
-        {
-          "amount": 500,
-          "original": 2400,
-          "original_understated": false,
-          "published_odds": 5000.0,
-          "remaining": 477,
-          "adjusted_odds_now": 25157.23,
-          "tracked_live": true
-        },
-        {
-          "amount": 150,
-          "original": 5700,
-          "original_understated": false,
-          "published_odds": 2105.26,
-          "remaining": 1135,
-          "adjusted_odds_now": 10572.69,
-          "tracked_live": true
-        },
-        {
-          "amount": 75,
-          "original": 90500,
-          "original_understated": false,
-          "published_odds": 132.6,
-          "remaining": 18756,
-          "adjusted_odds_now": 639.8,
-          "tracked_live": true
-        },
-        {
-          "amount": 50,
-          "original": 140000,
-          "original_understated": false,
-          "published_odds": 85.71,
-          "remaining": 28579,
-          "adjusted_odds_now": 419.89,
-          "tracked_live": true
-        },
-        {
-          "amount": 40,
-          "original": 80000,
-          "original_understated": false,
-          "published_odds": 150.0,
-          "remaining": null,
-          "adjusted_odds_now": null,
-          "tracked_live": false
-        },
-        {
-          "amount": 25,
-          "original": 280000,
-          "original_understated": false,
-          "published_odds": 42.86,
-          "remaining": null,
-          "adjusted_odds_now": null,
-          "tracked_live": false
-        },
-        {
-          "amount": 10,
-          "original": 860000,
-          "original_understated": false,
-          "published_odds": 13.95,
-          "remaining": null,
-          "adjusted_odds_now": null,
-          "tracked_live": false
-        },
-        {
-          "amount": 5,
-          "original": 1240000,
-          "original_understated": false,
-          "published_odds": 9.68,
-          "remaining": null,
-          "adjusted_odds_now": null,
-          "tracked_live": false
-        }
-      ],
-      "badges": {
-        "second_chance": false,
-        "online_game": false,
-        "fast_play": false,
-        "sales_ending_soon": true,
-        "new": false
-      },
-      "images": {
-        "cover": "images/covers/PA-1748_CV_400x750.jpg",
-        "uncovered": "images/backs/PA-1748_UC_400x750.jpg"
-      },
-      "detail_url": "https://www.palottery.pa.gov/Scratch-Offs/View-Scratch-Off.aspx?id=3322",
-      "bulletin_url": "https://www.pacodeandbulletin.gov/Display/pabull?file=/secure/pabulletin/data/vol55/55-32/1074.html"
     },
     {
       "id": 3321,
@@ -6361,7 +6242,7 @@
         "second_chance": false,
         "online_game": false,
         "fast_play": false,
-        "sales_ending_soon": false,
+        "sales_ending_soon": true,
         "new": false
       },
       "images": {
@@ -6900,7 +6781,7 @@
         "second_chance": false,
         "online_game": false,
         "fast_play": false,
-        "sales_ending_soon": false,
+        "sales_ending_soon": true,
         "new": false
       },
       "images": {
@@ -8043,7 +7924,7 @@
         "second_chance": false,
         "online_game": false,
         "fast_play": false,
-        "sales_ending_soon": false,
+        "sales_ending_soon": true,
         "new": false
       },
       "images": {
