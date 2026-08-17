@@ -161,14 +161,13 @@ stamp on `prizes-remaining.aspx` — every 15 minutes via
 3. Records the new stamp in `watchdog_state.json` (gitignored, local state
    only) so it doesn't re-alert on the same update.
 
-**SMS is not wired up** — AT&T's `txt.att.net` email-to-SMS gateway was
-permanently shut down 2025-06-17 (confirmed by a real failed test send here:
-Brevo relayed the message cleanly with no SMTP error, but nothing ever
-arrived — silent-drop is that gateway's documented post-shutdown behavior).
-Real SMS requires registering the existing Telnyx number for A2P 10DLC
-messaging, a multi-day carrier approval process. Once that's approved, add
-an SMS send back into `watchdog.py`'s change-detected branch (there's a
-comment marking exactly where).
+**Email only, by design** — SMS via AT&T's `txt.att.net` email-to-SMS gateway
+was tried and confirmed dead (permanently shut down 2025-06-17; Brevo relayed
+the message cleanly with no SMTP error, but nothing ever arrived — silent
+drop is that gateway's documented post-shutdown behavior). Real SMS would
+require registering the existing Telnyx number for A2P 10DLC messaging,
+including handing over personal identity info (last 4 of SSN) through a
+carrier verification flow — not pursued; the owner opted for email-only.
 
 Install alongside the main service:
 ```bash

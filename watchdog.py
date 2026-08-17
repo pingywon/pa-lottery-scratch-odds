@@ -5,7 +5,7 @@ PA Lottery only updates their prizes-remaining figures irregularly (observed:
 no change for 5+ days straight). Rather than re-scrape all ~140 pages on a
 schedule, this just checks the single freshness stamp on prizes-remaining.aspx
 every run (cheap - one request) and only triggers a full scrape.py refresh
-plus email/SMS alerts when that stamp actually moves. Meant to run every 15
+plus an email alert when that stamp actually moves. Meant to run every 15
 minutes via pa-lottery-scratch-odds-watchdog.timer.
 """
 import json
@@ -24,7 +24,6 @@ STATE_FILE = ROOT / "watchdog_state.json"
 BREVO_CREDS_FILE = Path.home() / ".brevo_smtp"
 
 EMAIL_TO = "pingywon@gmail.com"
-PHONE_NUMBER = "+14847694474"  # AT&T - on file for when real SMS (Telnyx A2P 10DLC) is ready
 APP_URL = "http://192.168.13.131:8789/"
 
 
@@ -122,12 +121,6 @@ def main():
         log(f"email sent to {EMAIL_TO}")
     except Exception as e:
         log(f"email send failed: {e}")
-
-    # SMS: AT&T's txt.att.net email-to-SMS gateway was permanently shut down
-    # 2025-06-17 (messages silently dropped, no bounce - confirmed by a real
-    # failed test send here). Email is the only working channel until real
-    # SMS via Telnyx A2P 10DLC registration is approved - see
-    # reference_telnyx_api memory once that's set up, then re-add a send here.
 
     trigger_scrape()
     log("triggered a fresh scrape")
