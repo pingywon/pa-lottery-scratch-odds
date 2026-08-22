@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-17T20:34:45Z",
-  "prizes_remaining_as_of": "August 11, 2026",
+  "scraped_at": "2026-08-19T14:09:30Z",
+  "prizes_remaining_as_of": "August 18, 2026",
   "game_count": 67,
   "games": [
     {
@@ -14,8 +14,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 10,
       "pct_top_prizes_remaining": 100.0,
-      "top6_adjusted_odds_now": 86.06,
-      "value_score_pct": 66.71,
+      "top6_adjusted_odds_now": 88.29,
+      "value_score_pct": 66.1,
       "tiers": [
         {
           "amount": 5000,
@@ -29,10 +29,10 @@
         {
           "amount": 500,
           "original": 210,
-          "original_understated": true,
+          "original_understated": false,
           "published_odds": 40000.0,
-          "remaining": 217,
-          "adjusted_odds_now": 38709.68,
+          "remaining": 209,
+          "adjusted_odds_now": 40191.39,
           "tracked_live": true
         },
         {
@@ -40,8 +40,8 @@
           "original": 560,
           "original_understated": true,
           "published_odds": 15000.0,
-          "remaining": 597,
-          "adjusted_odds_now": 14070.35,
+          "remaining": 583,
+          "adjusted_odds_now": 14408.23,
           "tracked_live": true
         },
         {
@@ -49,8 +49,8 @@
           "original": 17290,
           "original_understated": true,
           "published_odds": 485.83,
-          "remaining": 18121,
-          "adjusted_odds_now": 463.55,
+          "remaining": 17635,
+          "adjusted_odds_now": 476.33,
           "tracked_live": true
         },
         {
@@ -58,8 +58,8 @@
           "original": 7700,
           "original_understated": true,
           "published_odds": 1090.91,
-          "remaining": 8095,
-          "adjusted_odds_now": 1037.68,
+          "remaining": 7880,
+          "adjusted_odds_now": 1065.99,
           "tracked_live": true
         },
         {
@@ -67,8 +67,8 @@
           "original": 67200,
           "original_understated": true,
           "published_odds": 125.0,
-          "remaining": 70571,
-          "adjusted_odds_now": 119.03,
+          "remaining": 68827,
+          "adjusted_odds_now": 122.05,
           "tracked_live": true
         },
         {
@@ -124,8 +124,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 10,
       "pct_top_prizes_remaining": 100.0,
-      "top6_adjusted_odds_now": 55.34,
-      "value_score_pct": 70.87,
+      "top6_adjusted_odds_now": 57.31,
+      "value_score_pct": 69.96,
       "tiers": [
         {
           "amount": 25000,
@@ -141,44 +141,44 @@
           "original": 30,
           "original_understated": false,
           "published_odds": 180000.0,
-          "remaining": 30,
-          "adjusted_odds_now": 180000.0,
+          "remaining": 29,
+          "adjusted_odds_now": 186206.9,
           "tracked_live": true
         },
         {
           "amount": 400,
           "original": 360,
-          "original_understated": true,
+          "original_understated": false,
           "published_odds": 15000.0,
-          "remaining": 365,
-          "adjusted_odds_now": 14794.52,
+          "remaining": 350,
+          "adjusted_odds_now": 15428.57,
           "tracked_live": true
         },
         {
           "amount": 100,
           "original": 3060,
-          "original_understated": true,
+          "original_understated": false,
           "published_odds": 1764.71,
-          "remaining": 3109,
-          "adjusted_odds_now": 1736.89,
+          "remaining": 2976,
+          "adjusted_odds_now": 1814.52,
           "tracked_live": true
         },
         {
           "amount": 30,
           "original": 38475,
-          "original_understated": true,
+          "original_understated": false,
           "published_odds": 140.35,
-          "remaining": 39183,
-          "adjusted_odds_now": 137.81,
+          "remaining": 37832,
+          "adjusted_odds_now": 142.74,
           "tracked_live": true
         },
         {
           "amount": 20,
           "original": 54000,
-          "original_understated": true,
+          "original_understated": false,
           "published_odds": 100.0,
-          "remaining": 54873,
-          "adjusted_odds_now": 98.41,
+          "remaining": 53028,
+          "adjusted_odds_now": 101.83,
           "tracked_live": true
         },
         {
@@ -243,8 +243,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 10,
       "pct_top_prizes_remaining": 100.0,
-      "top6_adjusted_odds_now": 63.29,
-      "value_score_pct": 75.57,
+      "top6_adjusted_odds_now": 66.09,
+      "value_score_pct": 74.59,
       "tiers": [
         {
           "amount": 200000,
@@ -260,8 +260,8 @@
           "original": 50,
           "original_understated": false,
           "published_odds": 192000.0,
-          "remaining": 50,
-          "adjusted_odds_now": 192000.0,
+          "remaining": 47,
+          "adjusted_odds_now": 204255.32,
           "tracked_live": true
         },
         {
@@ -269,8 +269,8 @@
           "original": 1920,
           "original_understated": true,
           "published_odds": 5000.0,
-          "remaining": 2030,
-          "adjusted_odds_now": 4729.06,
+          "remaining": 1951,
+          "adjusted_odds_now": 4920.55,
           "tracked_live": true
         },
         {
@@ -278,8 +278,8 @@
           "original": 5920,
           "original_understated": true,
           "published_odds": 1621.62,
-          "remaining": 6201,
-          "adjusted_odds_now": 1548.14,
+          "remaining": 5939,
+          "adjusted_odds_now": 1616.43,
           "tracked_live": true
         },
         {
@@ -287,8 +287,8 @@
           "original": 72800,
           "original_understated": true,
           "published_odds": 131.87,
-          "remaining": 76355,
-          "adjusted_odds_now": 125.73,
+          "remaining": 73064,
+          "adjusted_odds_now": 131.39,
           "tracked_live": true
         },
         {
@@ -296,8 +296,8 @@
           "original": 64000,
           "original_understated": true,
           "published_odds": 150.0,
-          "remaining": 67040,
-          "adjusted_odds_now": 143.2,
+          "remaining": 64247,
+          "adjusted_odds_now": 149.42,
           "tracked_live": true
         },
         {
@@ -371,8 +371,8 @@
       "top_prize_original": 8,
       "top_prize_remaining": 8,
       "pct_top_prizes_remaining": 100.0,
-      "top6_adjusted_odds_now": 230.03,
-      "value_score_pct": 77.41,
+      "top6_adjusted_odds_now": 236.07,
+      "value_score_pct": 76.96,
       "tiers": [
         {
           "amount": 400000,
@@ -397,8 +397,8 @@
           "original": 700,
           "original_understated": true,
           "published_odds": 17142.86,
-          "remaining": 741,
-          "adjusted_odds_now": 16194.33,
+          "remaining": 726,
+          "adjusted_odds_now": 16528.93,
           "tracked_live": true
         },
         {
@@ -406,17 +406,17 @@
           "original": 23400,
           "original_understated": true,
           "published_odds": 512.82,
-          "remaining": 24188,
-          "adjusted_odds_now": 496.11,
+          "remaining": 23574,
+          "adjusted_odds_now": 509.04,
           "tracked_live": true
         },
         {
           "amount": 400,
           "original": 4600,
-          "original_understated": true,
+          "original_understated": false,
           "published_odds": 2608.7,
-          "remaining": 4705,
-          "adjusted_odds_now": 2550.48,
+          "remaining": 4591,
+          "adjusted_odds_now": 2613.81,
           "tracked_live": true
         },
         {
@@ -424,8 +424,8 @@
           "original": 21800,
           "original_understated": true,
           "published_odds": 550.46,
-          "remaining": 22511,
-          "adjusted_odds_now": 533.07,
+          "remaining": 21920,
+          "adjusted_odds_now": 547.45,
           "tracked_live": true
         },
         {
@@ -499,8 +499,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 5,
       "pct_top_prizes_remaining": 100.0,
-      "top6_adjusted_odds_now": 188.49,
-      "value_score_pct": 78.41,
+      "top6_adjusted_odds_now": 195.69,
+      "value_score_pct": 77.78,
       "tiers": [
         {
           "amount": 1000000,
@@ -532,19 +532,19 @@
         {
           "amount": 1000,
           "original": 17100,
-          "original_understated": true,
+          "original_understated": false,
           "published_odds": 421.05,
-          "remaining": 17136,
-          "adjusted_odds_now": 420.17,
+          "remaining": 16531,
+          "adjusted_odds_now": 435.55,
           "tracked_live": true
         },
         {
           "amount": 500,
           "original": 10800,
-          "original_understated": true,
+          "original_understated": false,
           "published_odds": 666.67,
-          "remaining": 10818,
-          "adjusted_odds_now": 665.56,
+          "remaining": 10401,
+          "adjusted_odds_now": 692.24,
           "tracked_live": true
         },
         {
@@ -552,8 +552,8 @@
           "original": 10200,
           "original_understated": false,
           "published_odds": 705.88,
-          "remaining": 10175,
-          "adjusted_odds_now": 707.62,
+          "remaining": 9790,
+          "adjusted_odds_now": 735.44,
           "tracked_live": true
         },
         {
@@ -618,8 +618,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 5,
       "pct_top_prizes_remaining": 100.0,
-      "top6_adjusted_odds_now": 85.36,
-      "value_score_pct": 80.72,
+      "top6_adjusted_odds_now": 86.64,
+      "value_score_pct": 80.54,
       "tiers": [
         {
           "amount": 4000000,
@@ -662,8 +662,8 @@
           "original": 1485,
           "original_understated": true,
           "published_odds": 3636.36,
-          "remaining": 1580,
-          "adjusted_odds_now": 3417.72,
+          "remaining": 1558,
+          "adjusted_odds_now": 3465.98,
           "tracked_live": true
         },
         {
@@ -671,8 +671,8 @@
           "original": 58500,
           "original_understated": true,
           "published_odds": 92.31,
-          "remaining": 61348,
-          "adjusted_odds_now": 88.02,
+          "remaining": 60440,
+          "adjusted_odds_now": 89.34,
           "tracked_live": true
         },
         {
@@ -735,18 +735,18 @@
       "total_tickets_printed": 8400000,
       "top_prize_amount": 2500,
       "top_prize_original": 15,
-      "top_prize_remaining": 14,
-      "pct_top_prizes_remaining": 93.3,
-      "top6_adjusted_odds_now": 202.76,
-      "value_score_pct": 64.13,
+      "top_prize_remaining": 12,
+      "pct_top_prizes_remaining": 80.0,
+      "top6_adjusted_odds_now": 208.34,
+      "value_score_pct": 63.76,
       "tiers": [
         {
           "amount": 2500,
           "original": 15,
           "original_understated": false,
           "published_odds": 560000.0,
-          "remaining": 14,
-          "adjusted_odds_now": 600000.0,
+          "remaining": 12,
+          "adjusted_odds_now": 700000.0,
           "tracked_live": true
         },
         {
@@ -754,8 +754,8 @@
           "original": 20,
           "original_understated": false,
           "published_odds": 420000.0,
-          "remaining": 19,
-          "adjusted_odds_now": 442105.26,
+          "remaining": 18,
+          "adjusted_odds_now": 466666.67,
           "tracked_live": true
         },
         {
@@ -763,8 +763,8 @@
           "original": 1050,
           "original_understated": false,
           "published_odds": 8000.0,
-          "remaining": 942,
-          "adjusted_odds_now": 8917.2,
+          "remaining": 918,
+          "adjusted_odds_now": 9150.33,
           "tracked_live": true
         },
         {
@@ -772,8 +772,8 @@
           "original": 1750,
           "original_understated": false,
           "published_odds": 4800.0,
-          "remaining": 1548,
-          "adjusted_odds_now": 5426.36,
+          "remaining": 1514,
+          "adjusted_odds_now": 5548.22,
           "tracked_live": true
         },
         {
@@ -781,8 +781,8 @@
           "original": 1400,
           "original_understated": false,
           "published_odds": 6000.0,
-          "remaining": 1236,
-          "adjusted_odds_now": 6796.12,
+          "remaining": 1201,
+          "adjusted_odds_now": 6994.17,
           "tracked_live": true
         },
         {
@@ -790,8 +790,8 @@
           "original": 42350,
           "original_understated": false,
           "published_odds": 198.35,
-          "remaining": 37669,
-          "adjusted_odds_now": 223.0,
+          "remaining": 36655,
+          "adjusted_odds_now": 229.16,
           "tracked_live": true
         },
         {
@@ -863,18 +863,18 @@
       "total_tickets_printed": 5400000,
       "top_prize_amount": 2000,
       "top_prize_original": 100,
-      "top_prize_remaining": 79,
-      "pct_top_prizes_remaining": 79.0,
-      "top6_adjusted_odds_now": 34.35,
-      "value_score_pct": 63.53,
+      "top_prize_remaining": 76,
+      "pct_top_prizes_remaining": 76.0,
+      "top6_adjusted_odds_now": 35.91,
+      "value_score_pct": 62.25,
       "tiers": [
         {
           "amount": 2000,
           "original": 100,
           "original_understated": false,
           "published_odds": 54000.0,
-          "remaining": 79,
-          "adjusted_odds_now": 68354.43,
+          "remaining": 76,
+          "adjusted_odds_now": 71052.63,
           "tracked_live": true
         },
         {
@@ -882,8 +882,8 @@
           "original": 495,
           "original_understated": false,
           "published_odds": 10909.09,
-          "remaining": 396,
-          "adjusted_odds_now": 13636.36,
+          "remaining": 383,
+          "adjusted_odds_now": 14099.22,
           "tracked_live": true
         },
         {
@@ -891,8 +891,8 @@
           "original": 720,
           "original_understated": false,
           "published_odds": 7500.0,
-          "remaining": 580,
-          "adjusted_odds_now": 9310.34,
+          "remaining": 551,
+          "adjusted_odds_now": 9800.36,
           "tracked_live": true
         },
         {
@@ -900,8 +900,8 @@
           "original": 2925,
           "original_understated": false,
           "published_odds": 1846.15,
-          "remaining": 2310,
-          "adjusted_odds_now": 2337.66,
+          "remaining": 2225,
+          "adjusted_odds_now": 2426.97,
           "tracked_live": true
         },
         {
@@ -909,8 +909,8 @@
           "original": 162000,
           "original_understated": false,
           "published_odds": 33.33,
-          "remaining": 131762,
-          "adjusted_odds_now": 40.98,
+          "remaining": 126052,
+          "adjusted_odds_now": 42.84,
           "tracked_live": true
         },
         {
@@ -918,8 +918,8 @@
           "original": 27000,
           "original_understated": false,
           "published_odds": 200.0,
-          "remaining": 22065,
-          "adjusted_odds_now": 244.73,
+          "remaining": 21099,
+          "adjusted_odds_now": 255.94,
           "tracked_live": true
         },
         {
@@ -975,8 +975,8 @@
       "top_prize_original": 8,
       "top_prize_remaining": 7,
       "pct_top_prizes_remaining": 87.5,
-      "top6_adjusted_odds_now": 1388.58,
-      "value_score_pct": 73.4,
+      "top6_adjusted_odds_now": 1417.16,
+      "value_score_pct": 73.26,
       "tiers": [
         {
           "amount": 250000,
@@ -992,8 +992,8 @@
           "original": 45,
           "original_understated": false,
           "published_odds": 280000.0,
-          "remaining": 39,
-          "adjusted_odds_now": 323076.92,
+          "remaining": 37,
+          "adjusted_odds_now": 340540.54,
           "tracked_live": true
         },
         {
@@ -1010,8 +1010,8 @@
           "original": 525,
           "original_understated": false,
           "published_odds": 24000.0,
-          "remaining": 476,
-          "adjusted_odds_now": 26470.59,
+          "remaining": 464,
+          "adjusted_odds_now": 27155.17,
           "tracked_live": true
         },
         {
@@ -1019,8 +1019,8 @@
           "original": 3045,
           "original_understated": false,
           "published_odds": 4137.93,
-          "remaining": 2763,
-          "adjusted_odds_now": 4560.26,
+          "remaining": 2709,
+          "adjusted_odds_now": 4651.16,
           "tracked_live": true
         },
         {
@@ -1028,8 +1028,8 @@
           "original": 6300,
           "original_understated": false,
           "published_odds": 2000.0,
-          "remaining": 5692,
-          "adjusted_odds_now": 2213.63,
+          "remaining": 5577,
+          "adjusted_odds_now": 2259.28,
           "tracked_live": true
         },
         {
@@ -1112,8 +1112,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 9,
       "pct_top_prizes_remaining": 90.0,
-      "top6_adjusted_odds_now": 681.04,
-      "value_score_pct": 73.15,
+      "top6_adjusted_odds_now": 705.53,
+      "value_score_pct": 73.02,
       "tiers": [
         {
           "amount": 150000,
@@ -1147,8 +1147,8 @@
           "original": 700,
           "original_understated": false,
           "published_odds": 12000.0,
-          "remaining": 564,
-          "adjusted_odds_now": 14893.62,
+          "remaining": 550,
+          "adjusted_odds_now": 15272.73,
           "tracked_live": true
         },
         {
@@ -1156,8 +1156,8 @@
           "original": 1330,
           "original_understated": false,
           "published_odds": 6315.79,
-          "remaining": 1077,
-          "adjusted_odds_now": 7799.44,
+          "remaining": 1031,
+          "adjusted_odds_now": 8147.43,
           "tracked_live": true
         },
         {
@@ -1165,8 +1165,8 @@
           "original": 13300,
           "original_understated": false,
           "published_odds": 631.58,
-          "remaining": 10626,
-          "adjusted_odds_now": 790.51,
+          "remaining": 10258,
+          "adjusted_odds_now": 818.87,
           "tracked_live": true
         },
         {
@@ -1249,8 +1249,8 @@
       "top_prize_original": 6,
       "top_prize_remaining": 6,
       "pct_top_prizes_remaining": 100.0,
-      "top6_adjusted_odds_now": 158.42,
-      "value_score_pct": 75.04,
+      "top6_adjusted_odds_now": 162.3,
+      "value_score_pct": 74.79,
       "tiers": [
         {
           "amount": 750000,
@@ -1275,8 +1275,8 @@
           "original": 450,
           "original_understated": false,
           "published_odds": 24000.0,
-          "remaining": 395,
-          "adjusted_odds_now": 27341.77,
+          "remaining": 388,
+          "adjusted_odds_now": 27835.05,
           "tracked_live": true
         },
         {
@@ -1284,8 +1284,8 @@
           "original": 810,
           "original_understated": false,
           "published_odds": 13333.33,
-          "remaining": 692,
-          "adjusted_odds_now": 15606.94,
+          "remaining": 677,
+          "adjusted_odds_now": 15952.73,
           "tracked_live": true
         },
         {
@@ -1293,8 +1293,8 @@
           "original": 6930,
           "original_understated": false,
           "published_odds": 1558.44,
-          "remaining": 5924,
-          "adjusted_odds_now": 1823.09,
+          "remaining": 5790,
+          "adjusted_odds_now": 1865.28,
           "tracked_live": true
         },
         {
@@ -1302,8 +1302,8 @@
           "original": 71550,
           "original_understated": false,
           "published_odds": 150.94,
-          "remaining": 61123,
-          "adjusted_odds_now": 176.69,
+          "remaining": 59649,
+          "adjusted_odds_now": 181.06,
           "tracked_live": true
         },
         {
@@ -1377,8 +1377,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 80.0,
-      "top6_adjusted_odds_now": 979.59,
-      "value_score_pct": 77.62,
+      "top6_adjusted_odds_now": 1002.3,
+      "value_score_pct": 77.53,
       "tiers": [
         {
           "amount": 1500000,
@@ -1412,8 +1412,8 @@
           "original": 440,
           "original_understated": false,
           "published_odds": 10909.09,
-          "remaining": 410,
-          "adjusted_odds_now": 11707.32,
+          "remaining": 396,
+          "adjusted_odds_now": 12121.21,
           "tracked_live": true
         },
         {
@@ -1421,8 +1421,8 @@
           "original": 1840,
           "original_understated": false,
           "published_odds": 2608.7,
-          "remaining": 1614,
-          "adjusted_odds_now": 2973.98,
+          "remaining": 1575,
+          "adjusted_odds_now": 3047.62,
           "tracked_live": true
         },
         {
@@ -1430,8 +1430,8 @@
           "original": 3240,
           "original_understated": false,
           "published_odds": 1481.48,
-          "remaining": 2851,
-          "adjusted_odds_now": 1683.62,
+          "remaining": 2793,
+          "adjusted_odds_now": 1718.58,
           "tracked_live": true
         },
         {
@@ -1514,8 +1514,8 @@
       "top_prize_original": 7,
       "top_prize_remaining": 6,
       "pct_top_prizes_remaining": 85.7,
-      "top6_adjusted_odds_now": 89.44,
-      "value_score_pct": 65.55,
+      "top6_adjusted_odds_now": 91.91,
+      "value_score_pct": 65.23,
       "tiers": [
         {
           "amount": 17000,
@@ -1531,8 +1531,8 @@
           "original": 20,
           "original_understated": false,
           "published_odds": 360000.0,
-          "remaining": 16,
-          "adjusted_odds_now": 450000.0,
+          "remaining": 15,
+          "adjusted_odds_now": 480000.0,
           "tracked_live": true
         },
         {
@@ -1540,8 +1540,8 @@
           "original": 360,
           "original_understated": false,
           "published_odds": 20000.0,
-          "remaining": 249,
-          "adjusted_odds_now": 28915.66,
+          "remaining": 245,
+          "adjusted_odds_now": 29387.76,
           "tracked_live": true
         },
         {
@@ -1549,8 +1549,8 @@
           "original": 6360,
           "original_understated": false,
           "published_odds": 1132.08,
-          "remaining": 4469,
-          "adjusted_odds_now": 1611.1,
+          "remaining": 4349,
+          "adjusted_odds_now": 1655.55,
           "tracked_live": true
         },
         {
@@ -1558,8 +1558,8 @@
           "original": 3000,
           "original_understated": false,
           "published_odds": 2400.0,
-          "remaining": 2134,
-          "adjusted_odds_now": 3373.95,
+          "remaining": 2075,
+          "adjusted_odds_now": 3469.88,
           "tracked_live": true
         },
         {
@@ -1567,8 +1567,8 @@
           "original": 103200,
           "original_understated": false,
           "published_odds": 69.77,
-          "remaining": 73631,
-          "adjusted_odds_now": 97.78,
+          "remaining": 71648,
+          "adjusted_odds_now": 100.49,
           "tracked_live": true
         },
         {
@@ -1642,8 +1642,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 8,
       "pct_top_prizes_remaining": 80.0,
-      "top6_adjusted_odds_now": 264.18,
-      "value_score_pct": 68.6,
+      "top6_adjusted_odds_now": 268.61,
+      "value_score_pct": 68.44,
       "tiers": [
         {
           "amount": 30000,
@@ -1668,8 +1668,8 @@
           "original": 2100,
           "original_understated": false,
           "published_odds": 4000.0,
-          "remaining": 1775,
-          "adjusted_odds_now": 4732.39,
+          "remaining": 1748,
+          "adjusted_odds_now": 4805.49,
           "tracked_live": true
         },
         {
@@ -1677,8 +1677,8 @@
           "original": 7000,
           "original_understated": false,
           "published_odds": 1200.0,
-          "remaining": 5990,
-          "adjusted_odds_now": 1402.34,
+          "remaining": 5870,
+          "adjusted_odds_now": 1431.01,
           "tracked_live": true
         },
         {
@@ -1686,8 +1686,8 @@
           "original": 10500,
           "original_understated": false,
           "published_odds": 800.0,
-          "remaining": 9041,
-          "adjusted_odds_now": 929.1,
+          "remaining": 8899,
+          "adjusted_odds_now": 943.93,
           "tracked_live": true
         },
         {
@@ -1695,8 +1695,8 @@
           "original": 17500,
           "original_understated": false,
           "published_odds": 480.0,
-          "remaining": 14967,
-          "adjusted_odds_now": 561.23,
+          "remaining": 14731,
+          "adjusted_odds_now": 570.23,
           "tracked_live": true
         },
         {
@@ -1779,8 +1779,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 80.0,
-      "top6_adjusted_odds_now": 152.79,
-      "value_score_pct": 66.59,
+      "top6_adjusted_odds_now": 159.43,
+      "value_score_pct": 66.1,
       "tiers": [
         {
           "amount": 250000,
@@ -1796,8 +1796,8 @@
           "original": 35,
           "original_understated": false,
           "published_odds": 240000.0,
-          "remaining": 22,
-          "adjusted_odds_now": 381818.18,
+          "remaining": 19,
+          "adjusted_odds_now": 442105.26,
           "tracked_live": true
         },
         {
@@ -1805,8 +1805,8 @@
           "original": 160,
           "original_understated": false,
           "published_odds": 52500.0,
-          "remaining": 87,
-          "adjusted_odds_now": 96551.72,
+          "remaining": 84,
+          "adjusted_odds_now": 100000.0,
           "tracked_live": true
         },
         {
@@ -1814,8 +1814,8 @@
           "original": 2450,
           "original_understated": false,
           "published_odds": 3428.57,
-          "remaining": 1477,
-          "adjusted_odds_now": 5687.2,
+          "remaining": 1422,
+          "adjusted_odds_now": 5907.17,
           "tracked_live": true
         },
         {
@@ -1823,8 +1823,8 @@
           "original": 28210,
           "original_understated": false,
           "published_odds": 297.77,
-          "remaining": 17022,
-          "adjusted_odds_now": 493.48,
+          "remaining": 16369,
+          "adjusted_odds_now": 513.17,
           "tracked_live": true
         },
         {
@@ -1832,8 +1832,8 @@
           "original": 61600,
           "original_understated": false,
           "published_odds": 136.36,
-          "remaining": 36366,
-          "adjusted_odds_now": 230.98,
+          "remaining": 34790,
+          "adjusted_odds_now": 241.45,
           "tracked_live": true
         },
         {
@@ -1898,8 +1898,8 @@
       "top_prize_original": 13,
       "top_prize_remaining": 9,
       "pct_top_prizes_remaining": 69.2,
-      "top6_adjusted_odds_now": 398.82,
-      "value_score_pct": 73.9,
+      "top6_adjusted_odds_now": 404.95,
+      "value_score_pct": 73.81,
       "tiers": [
         {
           "amount": 300000,
@@ -1924,8 +1924,8 @@
           "original": 540,
           "original_understated": false,
           "published_odds": 20000.0,
-          "remaining": 427,
-          "adjusted_odds_now": 25292.74,
+          "remaining": 421,
+          "adjusted_odds_now": 25653.21,
           "tracked_live": true
         },
         {
@@ -1933,8 +1933,8 @@
           "original": 1080,
           "original_understated": false,
           "published_odds": 10000.0,
-          "remaining": 833,
-          "adjusted_odds_now": 12965.19,
+          "remaining": 822,
+          "adjusted_odds_now": 13138.69,
           "tracked_live": true
         },
         {
@@ -1942,8 +1942,8 @@
           "original": 10350,
           "original_understated": false,
           "published_odds": 1043.48,
-          "remaining": 8063,
-          "adjusted_odds_now": 1339.45,
+          "remaining": 7924,
+          "adjusted_odds_now": 1362.95,
           "tracked_live": true
         },
         {
@@ -1951,8 +1951,8 @@
           "original": 22500,
           "original_understated": false,
           "published_odds": 480.0,
-          "remaining": 17725,
-          "adjusted_odds_now": 609.31,
+          "remaining": 17471,
+          "adjusted_odds_now": 618.17,
           "tracked_live": true
         },
         {
@@ -2026,8 +2026,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 5,
       "pct_top_prizes_remaining": 100.0,
-      "top6_adjusted_odds_now": 109.76,
-      "value_score_pct": 74.37,
+      "top6_adjusted_odds_now": 111.41,
+      "value_score_pct": 74.16,
       "tiers": [
         {
           "amount": 1000000,
@@ -2061,8 +2061,8 @@
           "original": 4900,
           "original_understated": false,
           "published_odds": 1714.29,
-          "remaining": 3916,
-          "adjusted_odds_now": 2145.05,
+          "remaining": 3865,
+          "adjusted_odds_now": 2173.35,
           "tracked_live": true
         },
         {
@@ -2070,8 +2070,8 @@
           "original": 10500,
           "original_understated": false,
           "published_odds": 800.0,
-          "remaining": 8241,
-          "adjusted_odds_now": 1019.29,
+          "remaining": 8132,
+          "adjusted_odds_now": 1032.96,
           "tracked_live": true
         },
         {
@@ -2079,8 +2079,8 @@
           "original": 81900,
           "original_understated": false,
           "published_odds": 102.56,
-          "remaining": 64278,
-          "adjusted_odds_now": 130.68,
+          "remaining": 63304,
+          "adjusted_odds_now": 132.69,
           "tracked_live": true
         },
         {
@@ -2154,8 +2154,8 @@
       "top_prize_original": 20,
       "top_prize_remaining": 17,
       "pct_top_prizes_remaining": 85.0,
-      "top6_adjusted_odds_now": 86.41,
-      "value_score_pct": 78.03,
+      "top6_adjusted_odds_now": 87.22,
+      "value_score_pct": 77.92,
       "tiers": [
         {
           "amount": 1000000,
@@ -2189,8 +2189,8 @@
           "original": 300,
           "original_understated": false,
           "published_odds": 24000.0,
-          "remaining": 279,
-          "adjusted_odds_now": 25806.45,
+          "remaining": 276,
+          "adjusted_odds_now": 26086.96,
           "tracked_live": true
         },
         {
@@ -2198,8 +2198,8 @@
           "original": 2400,
           "original_understated": false,
           "published_odds": 3000.0,
-          "remaining": 2195,
-          "adjusted_odds_now": 3280.18,
+          "remaining": 2176,
+          "adjusted_odds_now": 3308.82,
           "tracked_live": true
         },
         {
@@ -2207,8 +2207,8 @@
           "original": 88320,
           "original_understated": false,
           "published_odds": 81.52,
-          "remaining": 80646,
-          "adjusted_odds_now": 89.28,
+          "remaining": 79892,
+          "adjusted_odds_now": 90.12,
           "tracked_live": true
         },
         {
@@ -2273,8 +2273,8 @@
       "top_prize_original": 20,
       "top_prize_remaining": 11,
       "pct_top_prizes_remaining": 55.0,
-      "top6_adjusted_odds_now": 101.0,
-      "value_score_pct": 54.44,
+      "top6_adjusted_odds_now": 103.62,
+      "value_score_pct": 54.08,
       "tiers": [
         {
           "amount": 2500,
@@ -2290,8 +2290,8 @@
           "original": 140,
           "original_understated": false,
           "published_odds": 60000.0,
-          "remaining": 82,
-          "adjusted_odds_now": 102439.02,
+          "remaining": 81,
+          "adjusted_odds_now": 103703.7,
           "tracked_live": true
         },
         {
@@ -2299,8 +2299,8 @@
           "original": 840,
           "original_understated": false,
           "published_odds": 10000.0,
-          "remaining": 465,
-          "adjusted_odds_now": 18064.52,
+          "remaining": 447,
+          "adjusted_odds_now": 18791.95,
           "tracked_live": true
         },
         {
@@ -2308,8 +2308,8 @@
           "original": 1470,
           "original_understated": false,
           "published_odds": 5714.29,
-          "remaining": 808,
-          "adjusted_odds_now": 10396.04,
+          "remaining": 789,
+          "adjusted_odds_now": 10646.39,
           "tracked_live": true
         },
         {
@@ -2317,8 +2317,8 @@
           "original": 43050,
           "original_understated": false,
           "published_odds": 195.12,
-          "remaining": 23959,
-          "adjusted_odds_now": 350.6,
+          "remaining": 23319,
+          "adjusted_odds_now": 360.22,
           "tracked_live": true
         },
         {
@@ -2326,8 +2326,8 @@
           "original": 100800,
           "original_understated": false,
           "published_odds": 83.33,
-          "remaining": 57844,
-          "adjusted_odds_now": 145.22,
+          "remaining": 56422,
+          "adjusted_odds_now": 148.88,
           "tracked_live": true
         },
         {
@@ -2390,18 +2390,18 @@
       "total_tickets_printed": 8400000,
       "top_prize_amount": 100000,
       "top_prize_original": 20,
-      "top_prize_remaining": 9,
-      "pct_top_prizes_remaining": 45.0,
-      "top6_adjusted_odds_now": 4444.44,
-      "value_score_pct": 70.77,
+      "top_prize_remaining": 8,
+      "pct_top_prizes_remaining": 40.0,
+      "top6_adjusted_odds_now": 4597.7,
+      "value_score_pct": 70.51,
       "tiers": [
         {
           "amount": 100000,
           "original": 20,
           "original_understated": false,
           "published_odds": 420000.0,
-          "remaining": 9,
-          "adjusted_odds_now": 933333.33,
+          "remaining": 8,
+          "adjusted_odds_now": 1050000.0,
           "tracked_live": true
         },
         {
@@ -2418,8 +2418,8 @@
           "original": 20,
           "original_understated": false,
           "published_odds": 420000.0,
-          "remaining": 10,
-          "adjusted_odds_now": 840000.0,
+          "remaining": 9,
+          "adjusted_odds_now": 933333.33,
           "tracked_live": true
         },
         {
@@ -2427,8 +2427,8 @@
           "original": 350,
           "original_understated": false,
           "published_odds": 24000.0,
-          "remaining": 146,
-          "adjusted_odds_now": 57534.25,
+          "remaining": 140,
+          "adjusted_odds_now": 60000.0,
           "tracked_live": true
         },
         {
@@ -2436,8 +2436,8 @@
           "original": 910,
           "original_understated": false,
           "published_odds": 9230.77,
-          "remaining": 383,
-          "adjusted_odds_now": 21932.11,
+          "remaining": 371,
+          "adjusted_odds_now": 22641.51,
           "tracked_live": true
         },
         {
@@ -2445,8 +2445,8 @@
           "original": 3150,
           "original_understated": false,
           "published_odds": 2666.67,
-          "remaining": 1338,
-          "adjusted_odds_now": 6278.03,
+          "remaining": 1295,
+          "adjusted_odds_now": 6486.49,
           "tracked_live": true
         },
         {
@@ -2529,8 +2529,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 3,
       "pct_top_prizes_remaining": 60.0,
-      "top6_adjusted_odds_now": 213.03,
-      "value_score_pct": 67.44,
+      "top6_adjusted_odds_now": 220.0,
+      "value_score_pct": 67.18,
       "tiers": [
         {
           "amount": 1000000,
@@ -2546,8 +2546,8 @@
           "original": 15,
           "original_understated": false,
           "published_odds": 720000.0,
-          "remaining": 9,
-          "adjusted_odds_now": 1200000.0,
+          "remaining": 8,
+          "adjusted_odds_now": 1350000.0,
           "tracked_live": true
         },
         {
@@ -2555,8 +2555,8 @@
           "original": 50,
           "original_understated": false,
           "published_odds": 216000.0,
-          "remaining": 27,
-          "adjusted_odds_now": 400000.0,
+          "remaining": 26,
+          "adjusted_odds_now": 415384.62,
           "tracked_live": true
         },
         {
@@ -2564,8 +2564,8 @@
           "original": 3060,
           "original_understated": false,
           "published_odds": 3529.41,
-          "remaining": 1568,
-          "adjusted_odds_now": 6887.76,
+          "remaining": 1523,
+          "adjusted_odds_now": 7091.27,
           "tracked_live": true
         },
         {
@@ -2573,8 +2573,8 @@
           "original": 7200,
           "original_understated": false,
           "published_odds": 1500.0,
-          "remaining": 3657,
-          "adjusted_odds_now": 2953.24,
+          "remaining": 3544,
+          "adjusted_odds_now": 3047.4,
           "tracked_live": true
         },
         {
@@ -2582,8 +2582,8 @@
           "original": 88200,
           "original_understated": false,
           "published_odds": 122.45,
-          "remaining": 45433,
-          "adjusted_odds_now": 237.71,
+          "remaining": 43986,
+          "adjusted_odds_now": 245.53,
           "tracked_live": true
         },
         {
@@ -2657,8 +2657,8 @@
       "top_prize_original": 7,
       "top_prize_remaining": 5,
       "pct_top_prizes_remaining": 71.4,
-      "top6_adjusted_odds_now": 755.56,
-      "value_score_pct": 73.7,
+      "top6_adjusted_odds_now": 768.46,
+      "value_score_pct": 73.52,
       "tiers": [
         {
           "amount": 1000000,
@@ -2683,8 +2683,8 @@
           "original": 2250,
           "original_understated": false,
           "published_odds": 2400.0,
-          "remaining": 1637,
-          "adjusted_odds_now": 3298.72,
+          "remaining": 1607,
+          "adjusted_odds_now": 3360.3,
           "tracked_live": true
         },
         {
@@ -2692,8 +2692,8 @@
           "original": 495,
           "original_understated": false,
           "published_odds": 10909.09,
-          "remaining": 368,
-          "adjusted_odds_now": 14673.91,
+          "remaining": 359,
+          "adjusted_odds_now": 15041.78,
           "tracked_live": true
         },
         {
@@ -2701,8 +2701,8 @@
           "original": 2070,
           "original_understated": false,
           "published_odds": 2608.7,
-          "remaining": 1442,
-          "adjusted_odds_now": 3744.8,
+          "remaining": 1422,
+          "adjusted_odds_now": 3797.47,
           "tracked_live": true
         },
         {
@@ -2710,8 +2710,8 @@
           "original": 5445,
           "original_understated": false,
           "published_odds": 991.74,
-          "remaining": 3689,
-          "adjusted_odds_now": 1463.81,
+          "remaining": 3628,
+          "adjusted_odds_now": 1488.42,
           "tracked_live": true
         },
         {
@@ -2794,8 +2794,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 2,
       "pct_top_prizes_remaining": 40.0,
-      "top6_adjusted_odds_now": 503.57,
-      "value_score_pct": 61.44,
+      "top6_adjusted_odds_now": 511.42,
+      "value_score_pct": 61.36,
       "tiers": [
         {
           "amount": 10000,
@@ -2811,8 +2811,8 @@
           "original": 140,
           "original_understated": false,
           "published_odds": 60000.0,
-          "remaining": 81,
-          "adjusted_odds_now": 103703.7,
+          "remaining": 79,
+          "adjusted_odds_now": 106329.11,
           "tracked_live": true
         },
         {
@@ -2829,8 +2829,8 @@
           "original": 840,
           "original_understated": false,
           "published_odds": 10000.0,
-          "remaining": 472,
-          "adjusted_odds_now": 17796.61,
+          "remaining": 467,
+          "adjusted_odds_now": 17987.15,
           "tracked_live": true
         },
         {
@@ -2838,8 +2838,8 @@
           "original": 1750,
           "original_understated": false,
           "published_odds": 4800.0,
-          "remaining": 990,
-          "adjusted_odds_now": 8484.85,
+          "remaining": 973,
+          "adjusted_odds_now": 8633.09,
           "tracked_live": true
         },
         {
@@ -2847,8 +2847,8 @@
           "original": 25900,
           "original_understated": false,
           "published_odds": 324.32,
-          "remaining": 15051,
-          "adjusted_odds_now": 558.1,
+          "remaining": 14819,
+          "adjusted_odds_now": 566.84,
           "tracked_live": true
         },
         {
@@ -2920,18 +2920,18 @@
       "total_tickets_printed": 7200000,
       "top_prize_amount": 5000,
       "top_prize_original": 40,
-      "top_prize_remaining": 16,
-      "pct_top_prizes_remaining": 40.0,
-      "top6_adjusted_odds_now": 806.45,
-      "value_score_pct": 64.51,
+      "top_prize_remaining": 15,
+      "pct_top_prizes_remaining": 37.5,
+      "top6_adjusted_odds_now": 836.92,
+      "value_score_pct": 64.37,
       "tiers": [
         {
           "amount": 5000,
           "original": 40,
           "original_understated": false,
           "published_odds": 180000.0,
-          "remaining": 16,
-          "adjusted_odds_now": 450000.0,
+          "remaining": 15,
+          "adjusted_odds_now": 480000.0,
           "tracked_live": true
         },
         {
@@ -2957,8 +2957,8 @@
           "original": 3600,
           "original_understated": false,
           "published_odds": 2000.0,
-          "remaining": 1310,
-          "adjusted_odds_now": 5496.18,
+          "remaining": 1263,
+          "adjusted_odds_now": 5700.71,
           "tracked_live": true
         },
         {
@@ -2966,8 +2966,8 @@
           "original": 5400,
           "original_understated": false,
           "published_odds": 1333.33,
-          "remaining": 1975,
-          "adjusted_odds_now": 3645.57,
+          "remaining": 1894,
+          "adjusted_odds_now": 3801.48,
           "tracked_live": true
         },
         {
@@ -2975,8 +2975,8 @@
           "original": 15000,
           "original_understated": false,
           "published_odds": 480.0,
-          "remaining": 5586,
-          "adjusted_odds_now": 1288.94,
+          "remaining": 5390,
+          "adjusted_odds_now": 1335.81,
           "tracked_live": true
         },
         {
@@ -3050,8 +3050,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 6,
       "pct_top_prizes_remaining": 60.0,
-      "top6_adjusted_odds_now": 2639.85,
-      "value_score_pct": 70.05,
+      "top6_adjusted_odds_now": 2734.38,
+      "value_score_pct": 69.95,
       "tiers": [
         {
           "amount": 200000,
@@ -3067,8 +3067,8 @@
           "original": 40,
           "original_understated": false,
           "published_odds": 210000.0,
-          "remaining": 24,
-          "adjusted_odds_now": 350000.0,
+          "remaining": 23,
+          "adjusted_odds_now": 365217.39,
           "tracked_live": true
         },
         {
@@ -3076,8 +3076,8 @@
           "original": 40,
           "original_understated": false,
           "published_odds": 210000.0,
-          "remaining": 21,
-          "adjusted_odds_now": 400000.0,
+          "remaining": 20,
+          "adjusted_odds_now": 420000.0,
           "tracked_live": true
         },
         {
@@ -3085,8 +3085,8 @@
           "original": 60,
           "original_understated": false,
           "published_odds": 140000.0,
-          "remaining": 29,
-          "adjusted_odds_now": 289655.17,
+          "remaining": 28,
+          "adjusted_odds_now": 300000.0,
           "tracked_live": true
         },
         {
@@ -3094,8 +3094,8 @@
           "original": 420,
           "original_understated": false,
           "published_odds": 20000.0,
-          "remaining": 213,
-          "adjusted_odds_now": 39436.62,
+          "remaining": 206,
+          "adjusted_odds_now": 40776.7,
           "tracked_live": true
         },
         {
@@ -3103,8 +3103,8 @@
           "original": 5600,
           "original_understated": false,
           "published_odds": 1500.0,
-          "remaining": 2889,
-          "adjusted_odds_now": 2907.58,
+          "remaining": 2789,
+          "adjusted_odds_now": 3011.83,
           "tracked_live": true
         },
         {
@@ -3185,18 +3185,18 @@
       "total_tickets_printed": 8400000,
       "top_prize_amount": 100,
       "top_prize_original": 61600,
-      "top_prize_remaining": 16380,
-      "pct_top_prizes_remaining": 26.6,
-      "top6_adjusted_odds_now": 10.49,
-      "value_score_pct": 20.93,
+      "top_prize_remaining": 15360,
+      "pct_top_prizes_remaining": 24.9,
+      "top6_adjusted_odds_now": 11.15,
+      "value_score_pct": 19.66,
       "tiers": [
         {
           "amount": 100,
           "original": 61600,
           "original_understated": false,
           "published_odds": 136.36,
-          "remaining": 16380,
-          "adjusted_odds_now": 512.82,
+          "remaining": 15360,
+          "adjusted_odds_now": 546.88,
           "tracked_live": true
         },
         {
@@ -3204,8 +3204,8 @@
           "original": 45500,
           "original_understated": false,
           "published_odds": 184.62,
-          "remaining": 12407,
-          "adjusted_odds_now": 677.04,
+          "remaining": 11589,
+          "adjusted_odds_now": 724.83,
           "tracked_live": true
         },
         {
@@ -3213,8 +3213,8 @@
           "original": 308000,
           "original_understated": false,
           "published_odds": 27.27,
-          "remaining": 83471,
-          "adjusted_odds_now": 100.63,
+          "remaining": 78219,
+          "adjusted_odds_now": 107.39,
           "tracked_live": true
         },
         {
@@ -3222,8 +3222,8 @@
           "original": 700000,
           "original_understated": false,
           "published_odds": 12.0,
-          "remaining": 200541,
-          "adjusted_odds_now": 41.89,
+          "remaining": 188710,
+          "adjusted_odds_now": 44.51,
           "tracked_live": true
         },
         {
@@ -3231,8 +3231,8 @@
           "original": 1680000,
           "original_understated": false,
           "published_odds": 5.0,
-          "remaining": 487921,
-          "adjusted_odds_now": 17.22,
+          "remaining": 459591,
+          "adjusted_odds_now": 18.28,
           "tracked_live": true
         }
       ],
@@ -3259,18 +3259,18 @@
       "total_tickets_printed": 10800000,
       "top_prize_amount": 250,
       "top_prize_original": 67500,
-      "top_prize_remaining": 39548,
-      "pct_top_prizes_remaining": 58.6,
-      "top6_adjusted_odds_now": 4.84,
-      "value_score_pct": 46.42,
+      "top_prize_remaining": 38901,
+      "pct_top_prizes_remaining": 57.6,
+      "top6_adjusted_odds_now": 4.92,
+      "value_score_pct": 45.68,
       "tiers": [
         {
           "amount": 250,
           "original": 67500,
           "original_understated": false,
           "published_odds": 160.0,
-          "remaining": 39548,
-          "adjusted_odds_now": 273.09,
+          "remaining": 38901,
+          "adjusted_odds_now": 277.63,
           "tracked_live": true
         },
         {
@@ -3278,8 +3278,8 @@
           "original": 66600,
           "original_understated": false,
           "published_odds": 162.16,
-          "remaining": 39064,
-          "adjusted_odds_now": 276.47,
+          "remaining": 38456,
+          "adjusted_odds_now": 280.84,
           "tracked_live": true
         },
         {
@@ -3287,8 +3287,8 @@
           "original": 141750,
           "original_understated": false,
           "published_odds": 76.19,
-          "remaining": 83420,
-          "adjusted_odds_now": 129.47,
+          "remaining": 82051,
+          "adjusted_odds_now": 131.63,
           "tracked_live": true
         },
         {
@@ -3296,8 +3296,8 @@
           "original": 1296000,
           "original_understated": false,
           "published_odds": 8.33,
-          "remaining": 766191,
-          "adjusted_odds_now": 14.1,
+          "remaining": 753829,
+          "adjusted_odds_now": 14.33,
           "tracked_live": true
         },
         {
@@ -3305,8 +3305,8 @@
           "original": 2160000,
           "original_understated": false,
           "published_odds": 5.0,
-          "remaining": 1301849,
-          "adjusted_odds_now": 8.3,
+          "remaining": 1281844,
+          "adjusted_odds_now": 8.43,
           "tracked_live": true
         }
       ],
@@ -3333,18 +3333,18 @@
       "total_tickets_printed": 7200000,
       "top_prize_amount": 500,
       "top_prize_original": 57000,
-      "top_prize_remaining": 32293,
-      "pct_top_prizes_remaining": 56.7,
-      "top6_adjusted_odds_now": 4.77,
-      "value_score_pct": 45.54,
+      "top_prize_remaining": 31647,
+      "pct_top_prizes_remaining": 55.5,
+      "top6_adjusted_odds_now": 4.87,
+      "value_score_pct": 44.63,
       "tiers": [
         {
           "amount": 500,
           "original": 57000,
           "original_understated": false,
           "published_odds": 126.32,
-          "remaining": 32293,
-          "adjusted_odds_now": 222.96,
+          "remaining": 31647,
+          "adjusted_odds_now": 227.51,
           "tracked_live": true
         },
         {
@@ -3352,8 +3352,8 @@
           "original": 33000,
           "original_understated": false,
           "published_odds": 218.18,
-          "remaining": 18774,
-          "adjusted_odds_now": 383.51,
+          "remaining": 18406,
+          "adjusted_odds_now": 391.18,
           "tracked_live": true
         },
         {
@@ -3361,8 +3361,8 @@
           "original": 129000,
           "original_understated": false,
           "published_odds": 55.81,
-          "remaining": 73255,
-          "adjusted_odds_now": 98.29,
+          "remaining": 71728,
+          "adjusted_odds_now": 100.38,
           "tracked_live": true
         },
         {
@@ -3370,8 +3370,8 @@
           "original": 624000,
           "original_understated": false,
           "published_odds": 11.54,
-          "remaining": 354578,
-          "adjusted_odds_now": 20.31,
+          "remaining": 347491,
+          "adjusted_odds_now": 20.72,
           "tracked_live": true
         },
         {
@@ -3379,8 +3379,8 @@
           "original": 1800000,
           "original_understated": false,
           "published_odds": 4.0,
-          "remaining": 1030786,
-          "adjusted_odds_now": 6.98,
+          "remaining": 1010556,
+          "adjusted_odds_now": 7.12,
           "tracked_live": true
         }
       ],
@@ -3409,8 +3409,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 40.0,
-      "top6_adjusted_odds_now": 198.71,
-      "value_score_pct": 55.1,
+      "top6_adjusted_odds_now": 203.08,
+      "value_score_pct": 54.95,
       "tiers": [
         {
           "amount": 5000,
@@ -3435,8 +3435,8 @@
           "original": 700,
           "original_understated": false,
           "published_odds": 12000.0,
-          "remaining": 261,
-          "adjusted_odds_now": 32183.91,
+          "remaining": 251,
+          "adjusted_odds_now": 33466.14,
           "tracked_live": true
         },
         {
@@ -3444,8 +3444,8 @@
           "original": 840,
           "original_understated": false,
           "published_odds": 10000.0,
-          "remaining": 338,
-          "adjusted_odds_now": 24852.07,
+          "remaining": 331,
+          "adjusted_odds_now": 25377.64,
           "tracked_live": true
         },
         {
@@ -3453,8 +3453,8 @@
           "original": 18340,
           "original_understated": false,
           "published_odds": 458.02,
-          "remaining": 7384,
-          "adjusted_odds_now": 1137.59,
+          "remaining": 7221,
+          "adjusted_odds_now": 1163.27,
           "tracked_live": true
         },
         {
@@ -3462,8 +3462,8 @@
           "original": 84000,
           "original_understated": false,
           "published_odds": 100.0,
-          "remaining": 34279,
-          "adjusted_odds_now": 245.05,
+          "remaining": 33551,
+          "adjusted_odds_now": 250.37,
           "tracked_live": true
         },
         {
@@ -3528,8 +3528,8 @@
       "top_prize_original": 17,
       "top_prize_remaining": 7,
       "pct_top_prizes_remaining": 41.2,
-      "top6_adjusted_odds_now": 792.21,
-      "value_score_pct": 55.59,
+      "top6_adjusted_odds_now": 819.25,
+      "value_score_pct": 55.49,
       "tiers": [
         {
           "amount": 10000,
@@ -3554,8 +3554,8 @@
           "original": 800,
           "original_understated": false,
           "published_odds": 6000.0,
-          "remaining": 128,
-          "adjusted_odds_now": 37500.0,
+          "remaining": 122,
+          "adjusted_odds_now": 39344.26,
           "tracked_live": true
         },
         {
@@ -3563,8 +3563,8 @@
           "original": 2400,
           "original_understated": false,
           "published_odds": 2000.0,
-          "remaining": 405,
-          "adjusted_odds_now": 11851.85,
+          "remaining": 390,
+          "adjusted_odds_now": 12307.69,
           "tracked_live": true
         },
         {
@@ -3572,8 +3572,8 @@
           "original": 2800,
           "original_understated": false,
           "published_odds": 1714.29,
-          "remaining": 451,
-          "adjusted_odds_now": 10643.02,
+          "remaining": 433,
+          "adjusted_odds_now": 11085.45,
           "tracked_live": true
         },
         {
@@ -3581,8 +3581,8 @@
           "original": 28800,
           "original_understated": false,
           "published_odds": 166.67,
-          "remaining": 5064,
-          "adjusted_odds_now": 947.87,
+          "remaining": 4903,
+          "adjusted_odds_now": 978.99,
           "tracked_live": true
         },
         {
@@ -3654,18 +3654,18 @@
       "total_tickets_printed": 7200000,
       "top_prize_amount": 130000,
       "top_prize_original": 15,
-      "top_prize_remaining": 4,
-      "pct_top_prizes_remaining": 26.7,
-      "top6_adjusted_odds_now": 5669.29,
-      "value_score_pct": 63.92,
+      "top_prize_remaining": 3,
+      "pct_top_prizes_remaining": 20.0,
+      "top6_adjusted_odds_now": 5911.33,
+      "value_score_pct": 63.54,
       "tiers": [
         {
           "amount": 130000,
           "original": 15,
           "original_understated": false,
           "published_odds": 480000.0,
-          "remaining": 4,
-          "adjusted_odds_now": 1800000.0,
+          "remaining": 3,
+          "adjusted_odds_now": 2400000.0,
           "tracked_live": true
         },
         {
@@ -3691,8 +3691,8 @@
           "original": 3300,
           "original_understated": false,
           "published_odds": 2181.82,
-          "remaining": 378,
-          "adjusted_odds_now": 19047.62,
+          "remaining": 368,
+          "adjusted_odds_now": 19565.22,
           "tracked_live": true
         },
         {
@@ -3700,8 +3700,8 @@
           "original": 4080,
           "original_understated": false,
           "published_odds": 1764.71,
-          "remaining": 438,
-          "adjusted_odds_now": 16438.36,
+          "remaining": 422,
+          "adjusted_odds_now": 17061.61,
           "tracked_live": true
         },
         {
@@ -3709,8 +3709,8 @@
           "original": 5880,
           "original_understated": false,
           "published_odds": 1224.49,
-          "remaining": 438,
-          "adjusted_odds_now": 16438.36,
+          "remaining": 413,
+          "adjusted_odds_now": 17433.41,
           "tracked_live": true
         },
         {
@@ -3784,8 +3784,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 80.0,
-      "top6_adjusted_odds_now": 3792.33,
-      "value_score_pct": 71.92,
+      "top6_adjusted_odds_now": 3847.92,
+      "value_score_pct": 71.89,
       "tiers": [
         {
           "amount": 250000,
@@ -3819,8 +3819,8 @@
           "original": 350,
           "original_understated": false,
           "published_odds": 24000.0,
-          "remaining": 184,
-          "adjusted_odds_now": 45652.17,
+          "remaining": 181,
+          "adjusted_odds_now": 46408.84,
           "tracked_live": true
         },
         {
@@ -3828,8 +3828,8 @@
           "original": 700,
           "original_understated": false,
           "published_odds": 12000.0,
-          "remaining": 371,
-          "adjusted_odds_now": 22641.51,
+          "remaining": 365,
+          "adjusted_odds_now": 23013.7,
           "tracked_live": true
         },
         {
@@ -3837,8 +3837,8 @@
           "original": 3150,
           "original_understated": false,
           "published_odds": 2666.67,
-          "remaining": 1641,
-          "adjusted_odds_now": 5118.83,
+          "remaining": 1618,
+          "adjusted_odds_now": 5191.59,
           "tracked_live": true
         },
         {
@@ -3921,8 +3921,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 40.0,
-      "top6_adjusted_odds_now": 17647.06,
-      "value_score_pct": 72.12,
+      "top6_adjusted_odds_now": 18685.12,
+      "value_score_pct": 72.03,
       "tiers": [
         {
           "amount": 500000,
@@ -3938,8 +3938,8 @@
           "original": 20,
           "original_understated": false,
           "published_odds": 540000.0,
-          "remaining": 8,
-          "adjusted_odds_now": 1350000.0,
+          "remaining": 7,
+          "adjusted_odds_now": 1542857.14,
           "tracked_live": true
         },
         {
@@ -3947,8 +3947,8 @@
           "original": 30,
           "original_understated": false,
           "published_odds": 360000.0,
-          "remaining": 12,
-          "adjusted_odds_now": 900000.0,
+          "remaining": 10,
+          "adjusted_odds_now": 1080000.0,
           "tracked_live": true
         },
         {
@@ -3965,8 +3965,8 @@
           "original": 30,
           "original_understated": false,
           "published_odds": 360000.0,
-          "remaining": 11,
-          "adjusted_odds_now": 981818.18,
+          "remaining": 10,
+          "adjusted_odds_now": 1080000.0,
           "tracked_live": true
         },
         {
@@ -3974,8 +3974,8 @@
           "original": 1800,
           "original_understated": false,
           "published_odds": 6000.0,
-          "remaining": 565,
-          "adjusted_odds_now": 19115.04,
+          "remaining": 535,
+          "adjusted_odds_now": 20186.92,
           "tracked_live": true
         },
         {
@@ -4076,8 +4076,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 3,
       "pct_top_prizes_remaining": 60.0,
-      "top6_adjusted_odds_now": 1084.77,
-      "value_score_pct": 73.56,
+      "top6_adjusted_odds_now": 1096.89,
+      "value_score_pct": 73.53,
       "tiers": [
         {
           "amount": 2500000,
@@ -4111,8 +4111,8 @@
           "original": 585,
           "original_understated": false,
           "published_odds": 9230.77,
-          "remaining": 386,
-          "adjusted_odds_now": 13989.64,
+          "remaining": 381,
+          "adjusted_odds_now": 14173.23,
           "tracked_live": true
         },
         {
@@ -4120,8 +4120,8 @@
           "original": 2025,
           "original_understated": false,
           "published_odds": 2666.67,
-          "remaining": 1266,
-          "adjusted_odds_now": 4265.4,
+          "remaining": 1255,
+          "adjusted_odds_now": 4302.79,
           "tracked_live": true
         },
         {
@@ -4129,8 +4129,8 @@
           "original": 5445,
           "original_understated": false,
           "published_odds": 991.74,
-          "remaining": 3310,
-          "adjusted_odds_now": 1631.42,
+          "remaining": 3271,
+          "adjusted_odds_now": 1650.87,
           "tracked_live": true
         },
         {
@@ -4213,8 +4213,8 @@
       "top_prize_original": 4,
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 25.0,
-      "top6_adjusted_odds_now": 239.91,
-      "value_score_pct": 41.28,
+      "top6_adjusted_odds_now": 247.66,
+      "value_score_pct": 41.13,
       "tiers": [
         {
           "amount": 350000,
@@ -4248,8 +4248,8 @@
           "original": 900,
           "original_understated": false,
           "published_odds": 12000.0,
-          "remaining": 217,
-          "adjusted_odds_now": 49769.59,
+          "remaining": 214,
+          "adjusted_odds_now": 50467.29,
           "tracked_live": true
         },
         {
@@ -4257,8 +4257,8 @@
           "original": 6210,
           "original_understated": false,
           "published_odds": 1739.13,
-          "remaining": 1492,
-          "adjusted_odds_now": 7238.61,
+          "remaining": 1445,
+          "adjusted_odds_now": 7474.05,
           "tracked_live": true
         },
         {
@@ -4266,8 +4266,8 @@
           "original": 9900,
           "original_understated": false,
           "published_odds": 1090.91,
-          "remaining": 2507,
-          "adjusted_odds_now": 4307.94,
+          "remaining": 2425,
+          "adjusted_odds_now": 4453.61,
           "tracked_live": true
         },
         {
@@ -4275,8 +4275,8 @@
           "original": 151200,
           "original_understated": false,
           "published_odds": 71.43,
-          "remaining": 40797,
-          "adjusted_odds_now": 264.73,
+          "remaining": 39521,
+          "adjusted_odds_now": 273.27,
           "tracked_live": true
         },
         {
@@ -4332,8 +4332,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 20.0,
-      "top6_adjusted_odds_now": 153.92,
-      "value_score_pct": 36.27,
+      "top6_adjusted_odds_now": 157.09,
+      "value_score_pct": 36.12,
       "tiers": [
         {
           "amount": 20000,
@@ -4358,8 +4358,8 @@
           "original": 960,
           "original_understated": false,
           "published_odds": 5000.0,
-          "remaining": 208,
-          "adjusted_odds_now": 23076.92,
+          "remaining": 204,
+          "adjusted_odds_now": 23529.41,
           "tracked_live": true
         },
         {
@@ -4367,8 +4367,8 @@
           "original": 1600,
           "original_understated": false,
           "published_odds": 3000.0,
-          "remaining": 338,
-          "adjusted_odds_now": 14201.18,
+          "remaining": 333,
+          "adjusted_odds_now": 14414.41,
           "tracked_live": true
         },
         {
@@ -4376,8 +4376,8 @@
           "original": 7600,
           "original_understated": false,
           "published_odds": 631.58,
-          "remaining": 1629,
-          "adjusted_odds_now": 2946.59,
+          "remaining": 1601,
+          "adjusted_odds_now": 2998.13,
           "tracked_live": true
         },
         {
@@ -4385,8 +4385,8 @@
           "original": 144000,
           "original_understated": false,
           "published_odds": 33.33,
-          "remaining": 29003,
-          "adjusted_odds_now": 165.5,
+          "remaining": 28411,
+          "adjusted_odds_now": 168.95,
           "tracked_live": true
         },
         {
@@ -4442,8 +4442,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 20.0,
-      "top6_adjusted_odds_now": 273.06,
-      "value_score_pct": 46.11,
+      "top6_adjusted_odds_now": 283.14,
+      "value_score_pct": 45.85,
       "tiers": [
         {
           "amount": 1600000,
@@ -4459,8 +4459,8 @@
           "original": 40,
           "original_understated": false,
           "published_odds": 270000.0,
-          "remaining": 13,
-          "adjusted_odds_now": 830769.23,
+          "remaining": 10,
+          "adjusted_odds_now": 1080000.0,
           "tracked_live": true
         },
         {
@@ -4468,8 +4468,8 @@
           "original": 900,
           "original_understated": false,
           "published_odds": 12000.0,
-          "remaining": 276,
-          "adjusted_odds_now": 39130.43,
+          "remaining": 263,
+          "adjusted_odds_now": 41064.64,
           "tracked_live": true
         },
         {
@@ -4477,8 +4477,8 @@
           "original": 4860,
           "original_understated": false,
           "published_odds": 2222.22,
-          "remaining": 1368,
-          "adjusted_odds_now": 7894.74,
+          "remaining": 1321,
+          "adjusted_odds_now": 8175.62,
           "tracked_live": true
         },
         {
@@ -4486,8 +4486,8 @@
           "original": 40950,
           "original_understated": false,
           "published_odds": 263.74,
-          "remaining": 11621,
-          "adjusted_odds_now": 929.35,
+          "remaining": 11184,
+          "adjusted_odds_now": 965.67,
           "tracked_live": true
         },
         {
@@ -4495,8 +4495,8 @@
           "original": 90000,
           "original_understated": false,
           "published_odds": 120.0,
-          "remaining": 26273,
-          "adjusted_odds_now": 411.07,
+          "remaining": 25365,
+          "adjusted_odds_now": 425.78,
           "tracked_live": true
         },
         {
@@ -4552,8 +4552,8 @@
       "top_prize_original": 6,
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 66.7,
-      "top6_adjusted_odds_now": 74.05,
-      "value_score_pct": 58.08,
+      "top6_adjusted_odds_now": 75.18,
+      "value_score_pct": 57.9,
       "tiers": [
         {
           "amount": 3200000,
@@ -4578,8 +4578,8 @@
           "original": 810,
           "original_understated": false,
           "published_odds": 13333.33,
-          "remaining": 408,
-          "adjusted_odds_now": 26470.59,
+          "remaining": 398,
+          "adjusted_odds_now": 27135.68,
           "tracked_live": true
         },
         {
@@ -4587,8 +4587,8 @@
           "original": 14490,
           "original_understated": false,
           "published_odds": 745.34,
-          "remaining": 6986,
-          "adjusted_odds_now": 1545.95,
+          "remaining": 6882,
+          "adjusted_odds_now": 1569.31,
           "tracked_live": true
         },
         {
@@ -4596,8 +4596,8 @@
           "original": 86400,
           "original_understated": false,
           "published_odds": 125.0,
-          "remaining": 41881,
-          "adjusted_odds_now": 257.87,
+          "remaining": 41263,
+          "adjusted_odds_now": 261.74,
           "tracked_live": true
         },
         {
@@ -4605,8 +4605,8 @@
           "original": 198000,
           "original_understated": false,
           "published_odds": 54.55,
-          "remaining": 96549,
-          "adjusted_odds_now": 111.86,
+          "remaining": 95089,
+          "adjusted_odds_now": 113.58,
           "tracked_live": true
         },
         {
@@ -4671,8 +4671,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 80.0,
-      "top6_adjusted_odds_now": 326.8,
-      "value_score_pct": 68.57,
+      "top6_adjusted_odds_now": 331.2,
+      "value_score_pct": 68.49,
       "tiers": [
         {
           "amount": 7250000,
@@ -4697,8 +4697,8 @@
           "original": 280,
           "original_understated": false,
           "published_odds": 30000.0,
-          "remaining": 164,
-          "adjusted_odds_now": 51219.51,
+          "remaining": 160,
+          "adjusted_odds_now": 52500.0,
           "tracked_live": true
         },
         {
@@ -4706,8 +4706,8 @@
           "original": 1750,
           "original_understated": false,
           "published_odds": 4800.0,
-          "remaining": 992,
-          "adjusted_odds_now": 8467.74,
+          "remaining": 981,
+          "adjusted_odds_now": 8562.69,
           "tracked_live": true
         },
         {
@@ -4715,8 +4715,8 @@
           "original": 21355,
           "original_understated": false,
           "published_odds": 393.35,
-          "remaining": 11950,
-          "adjusted_odds_now": 702.93,
+          "remaining": 11777,
+          "adjusted_odds_now": 713.25,
           "tracked_live": true
         },
         {
@@ -4724,8 +4724,8 @@
           "original": 22400,
           "original_understated": false,
           "published_odds": 375.0,
-          "remaining": 12588,
-          "adjusted_odds_now": 667.3,
+          "remaining": 12434,
+          "adjusted_odds_now": 675.57,
           "tracked_live": true
         },
         {
@@ -4799,8 +4799,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 2,
       "pct_top_prizes_remaining": 40.0,
-      "top6_adjusted_odds_now": 80.95,
-      "value_score_pct": 63.23,
+      "top6_adjusted_odds_now": 81.41,
+      "value_score_pct": 63.14,
       "tiers": [
         {
           "amount": 14500000,
@@ -4834,8 +4834,8 @@
           "original": 275,
           "original_understated": false,
           "published_odds": 24000.0,
-          "remaining": 202,
-          "adjusted_odds_now": 32673.27,
+          "remaining": 198,
+          "adjusted_odds_now": 33333.33,
           "tracked_live": true
         },
         {
@@ -4843,8 +4843,8 @@
           "original": 13915,
           "original_understated": false,
           "published_odds": 474.31,
-          "remaining": 10090,
-          "adjusted_odds_now": 654.11,
+          "remaining": 10031,
+          "adjusted_odds_now": 657.96,
           "tracked_live": true
         },
         {
@@ -4852,8 +4852,8 @@
           "original": 99000,
           "original_understated": false,
           "published_odds": 66.67,
-          "remaining": 71198,
-          "adjusted_odds_now": 92.7,
+          "remaining": 70803,
+          "adjusted_odds_now": 93.22,
           "tracked_live": true
         },
         {
@@ -4909,8 +4909,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 2,
       "pct_top_prizes_remaining": 40.0,
-      "top6_adjusted_odds_now": 746.6,
-      "value_score_pct": 56.68,
+      "top6_adjusted_odds_now": 755.26,
+      "value_score_pct": 56.65,
       "tiers": [
         {
           "amount": 250000,
@@ -4935,8 +4935,8 @@
           "original": 160,
           "original_understated": false,
           "published_odds": 52500.0,
-          "remaining": 18,
-          "adjusted_odds_now": 466666.67,
+          "remaining": 17,
+          "adjusted_odds_now": 494117.65,
           "tracked_live": true
         },
         {
@@ -4944,8 +4944,8 @@
           "original": 2450,
           "original_understated": false,
           "published_odds": 3428.57,
-          "remaining": 262,
-          "adjusted_odds_now": 32061.07,
+          "remaining": 258,
+          "adjusted_odds_now": 32558.14,
           "tracked_live": true
         },
         {
@@ -4953,8 +4953,8 @@
           "original": 28210,
           "original_understated": false,
           "published_odds": 297.77,
-          "remaining": 3129,
-          "adjusted_odds_now": 2684.56,
+          "remaining": 3100,
+          "adjusted_odds_now": 2709.68,
           "tracked_live": true
         },
         {
@@ -4962,8 +4962,8 @@
           "original": 61600,
           "original_understated": false,
           "published_odds": 136.36,
-          "remaining": 7835,
-          "adjusted_odds_now": 1072.11,
+          "remaining": 7740,
+          "adjusted_odds_now": 1085.27,
           "tracked_live": true
         },
         {
@@ -5026,18 +5026,18 @@
       "total_tickets_printed": 6600000,
       "top_prize_amount": 2500,
       "top_prize_original": 2110,
-      "top_prize_remaining": 180,
-      "pct_top_prizes_remaining": 8.5,
-      "top6_adjusted_odds_now": 75.46,
-      "value_score_pct": 20.29,
+      "top_prize_remaining": 175,
+      "pct_top_prizes_remaining": 8.3,
+      "top6_adjusted_odds_now": 76.94,
+      "value_score_pct": 20.18,
       "tiers": [
         {
           "amount": 2500,
           "original": 2110,
           "original_understated": false,
           "published_odds": 3127.96,
-          "remaining": 180,
-          "adjusted_odds_now": 36666.67,
+          "remaining": 175,
+          "adjusted_odds_now": 37714.29,
           "tracked_live": true
         },
         {
@@ -5045,8 +5045,8 @@
           "original": 7150,
           "original_understated": false,
           "published_odds": 923.08,
-          "remaining": 546,
-          "adjusted_odds_now": 12087.91,
+          "remaining": 539,
+          "adjusted_odds_now": 12244.9,
           "tracked_live": true
         },
         {
@@ -5054,8 +5054,8 @@
           "original": 17820,
           "original_understated": false,
           "published_odds": 370.37,
-          "remaining": 1297,
-          "adjusted_odds_now": 5088.67,
+          "remaining": 1272,
+          "adjusted_odds_now": 5188.68,
           "tracked_live": true
         },
         {
@@ -5063,8 +5063,8 @@
           "original": 66000,
           "original_understated": false,
           "published_odds": 100.0,
-          "remaining": 5145,
-          "adjusted_odds_now": 1282.8,
+          "remaining": 5014,
+          "adjusted_odds_now": 1316.31,
           "tracked_live": true
         },
         {
@@ -5072,8 +5072,8 @@
           "original": 132000,
           "original_understated": false,
           "published_odds": 50.0,
-          "remaining": 10736,
-          "adjusted_odds_now": 614.75,
+          "remaining": 10515,
+          "adjusted_odds_now": 627.67,
           "tracked_live": true
         },
         {
@@ -5081,8 +5081,8 @@
           "original": 770000,
           "original_understated": false,
           "published_odds": 8.57,
-          "remaining": 69556,
-          "adjusted_odds_now": 94.89,
+          "remaining": 68270,
+          "adjusted_odds_now": 96.67,
           "tracked_live": true
         },
         {
@@ -5120,8 +5120,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 2,
       "pct_top_prizes_remaining": 40.0,
-      "top6_adjusted_odds_now": 229.58,
-      "value_score_pct": 71.17,
+      "top6_adjusted_odds_now": 230.11,
+      "value_score_pct": 71.16,
       "tiers": [
         {
           "amount": 1000000,
@@ -5155,8 +5155,8 @@
           "original": 750,
           "original_understated": false,
           "published_odds": 4800.0,
-          "remaining": 344,
-          "adjusted_odds_now": 10465.12,
+          "remaining": 343,
+          "adjusted_odds_now": 10495.63,
           "tracked_live": true
         },
         {
@@ -5164,8 +5164,8 @@
           "original": 3900,
           "original_understated": false,
           "published_odds": 923.08,
-          "remaining": 1766,
-          "adjusted_odds_now": 2038.51,
+          "remaining": 1762,
+          "adjusted_odds_now": 2043.13,
           "tracked_live": true
         },
         {
@@ -5173,8 +5173,8 @@
           "original": 30000,
           "original_understated": false,
           "published_odds": 120.0,
-          "remaining": 13558,
-          "adjusted_odds_now": 265.53,
+          "remaining": 13527,
+          "adjusted_odds_now": 266.13,
           "tracked_live": true
         },
         {
@@ -5248,8 +5248,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 40.0,
-      "top6_adjusted_odds_now": 2121.21,
-      "value_score_pct": 61.62,
+      "top6_adjusted_odds_now": 2179.55,
+      "value_score_pct": 61.57,
       "tiers": [
         {
           "amount": 50000,
@@ -5274,8 +5274,8 @@
           "original": 350,
           "original_understated": false,
           "published_odds": 24000.0,
-          "remaining": 137,
-          "adjusted_odds_now": 61313.87,
+          "remaining": 132,
+          "adjusted_odds_now": 63636.36,
           "tracked_live": true
         },
         {
@@ -5283,8 +5283,8 @@
           "original": 420,
           "original_understated": false,
           "published_odds": 20000.0,
-          "remaining": 146,
-          "adjusted_odds_now": 57534.25,
+          "remaining": 141,
+          "adjusted_odds_now": 59574.47,
           "tracked_live": true
         },
         {
@@ -5292,8 +5292,8 @@
           "original": 3500,
           "original_understated": false,
           "published_odds": 2400.0,
-          "remaining": 1200,
-          "adjusted_odds_now": 7000.0,
+          "remaining": 1171,
+          "adjusted_odds_now": 7173.36,
           "tracked_live": true
         },
         {
@@ -5301,8 +5301,8 @@
           "original": 7000,
           "original_understated": false,
           "published_odds": 1200.0,
-          "remaining": 2464,
-          "adjusted_odds_now": 3409.09,
+          "remaining": 2397,
+          "adjusted_odds_now": 3504.38,
           "tracked_live": true
         },
         {
@@ -5412,7 +5412,7 @@
       "top_prize_original": 20,
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 5.0,
-      "top6_adjusted_odds_now": 101052.63,
+      "top6_adjusted_odds_now": 103225.81,
       "value_score_pct": 64.25,
       "tiers": [
         {
@@ -5456,8 +5456,8 @@
           "original": 800,
           "original_understated": false,
           "published_odds": 12000.0,
-          "remaining": 26,
-          "adjusted_odds_now": 369230.77,
+          "remaining": 25,
+          "adjusted_odds_now": 384000.0,
           "tracked_live": true
         },
         {
@@ -5465,8 +5465,8 @@
           "original": 1280,
           "original_understated": false,
           "published_odds": 7500.0,
-          "remaining": 62,
-          "adjusted_odds_now": 154838.71,
+          "remaining": 61,
+          "adjusted_odds_now": 157377.05,
           "tracked_live": true
         },
         {
@@ -5549,8 +5549,8 @@
       "top_prize_original": 12,
       "top_prize_remaining": 3,
       "pct_top_prizes_remaining": 25.0,
-      "top6_adjusted_odds_now": 98.04,
-      "value_score_pct": 51.52,
+      "top6_adjusted_odds_now": 100.35,
+      "value_score_pct": 51.36,
       "tiers": [
         {
           "amount": 500000,
@@ -5566,8 +5566,8 @@
           "original": 50,
           "original_understated": false,
           "published_odds": 216000.0,
-          "remaining": 15,
-          "adjusted_odds_now": 720000.0,
+          "remaining": 14,
+          "adjusted_odds_now": 771428.57,
           "tracked_live": true
         },
         {
@@ -5575,8 +5575,8 @@
           "original": 9720,
           "original_understated": false,
           "published_odds": 1111.11,
-          "remaining": 2561,
-          "adjusted_odds_now": 4217.1,
+          "remaining": 2504,
+          "adjusted_odds_now": 4313.1,
           "tracked_live": true
         },
         {
@@ -5584,8 +5584,8 @@
           "original": 10620,
           "original_understated": false,
           "published_odds": 1016.95,
-          "remaining": 2836,
-          "adjusted_odds_now": 3808.18,
+          "remaining": 2764,
+          "adjusted_odds_now": 3907.38,
           "tracked_live": true
         },
         {
@@ -5593,8 +5593,8 @@
           "original": 13500,
           "original_understated": false,
           "published_odds": 800.0,
-          "remaining": 3545,
-          "adjusted_odds_now": 3046.54,
+          "remaining": 3457,
+          "adjusted_odds_now": 3124.1,
           "tracked_live": true
         },
         {
@@ -5602,8 +5602,8 @@
           "original": 360000,
           "original_understated": false,
           "published_odds": 30.0,
-          "remaining": 101195,
-          "adjusted_odds_now": 106.72,
+          "remaining": 98880,
+          "adjusted_odds_now": 109.22,
           "tracked_live": true
         },
         {
@@ -5668,8 +5668,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 5,
       "pct_top_prizes_remaining": 50.0,
-      "top6_adjusted_odds_now": 1082.54,
-      "value_score_pct": 69.51,
+      "top6_adjusted_odds_now": 1092.65,
+      "value_score_pct": 69.49,
       "tiers": [
         {
           "amount": 1500000,
@@ -5712,8 +5712,8 @@
           "original": 3840,
           "original_understated": false,
           "published_odds": 1250.0,
-          "remaining": 1896,
-          "adjusted_odds_now": 2531.65,
+          "remaining": 1877,
+          "adjusted_odds_now": 2557.27,
           "tracked_live": true
         },
         {
@@ -5721,8 +5721,8 @@
           "original": 5200,
           "original_understated": false,
           "published_odds": 923.08,
-          "remaining": 2500,
-          "adjusted_odds_now": 1920.0,
+          "remaining": 2478,
+          "adjusted_odds_now": 1937.05,
           "tracked_live": true
         },
         {
@@ -5796,8 +5796,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 5,
       "pct_top_prizes_remaining": 50.0,
-      "top6_adjusted_odds_now": 261.14,
-      "value_score_pct": 63.54,
+      "top6_adjusted_odds_now": 262.84,
+      "value_score_pct": 63.5,
       "tiers": [
         {
           "amount": 500000,
@@ -5822,8 +5822,8 @@
           "original": 600,
           "original_understated": false,
           "published_odds": 20000.0,
-          "remaining": 269,
-          "adjusted_odds_now": 44609.67,
+          "remaining": 267,
+          "adjusted_odds_now": 44943.82,
           "tracked_live": true
         },
         {
@@ -5840,8 +5840,8 @@
           "original": 8400,
           "original_understated": false,
           "published_odds": 1428.57,
-          "remaining": 3767,
-          "adjusted_odds_now": 3185.56,
+          "remaining": 3747,
+          "adjusted_odds_now": 3202.56,
           "tracked_live": true
         },
         {
@@ -5849,8 +5849,8 @@
           "original": 92000,
           "original_understated": false,
           "published_odds": 130.43,
-          "remaining": 41538,
-          "adjusted_odds_now": 288.89,
+          "remaining": 41263,
+          "adjusted_odds_now": 290.82,
           "tracked_live": true
         },
         {
@@ -5924,8 +5924,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 20.0,
-      "top6_adjusted_odds_now": 722.38,
-      "value_score_pct": 56.97,
+      "top6_adjusted_odds_now": 761.74,
+      "value_score_pct": 56.82,
       "tiers": [
         {
           "amount": 1000000,
@@ -5959,8 +5959,8 @@
           "original": 6000,
           "original_understated": false,
           "published_odds": 1200.0,
-          "remaining": 970,
-          "adjusted_odds_now": 7422.68,
+          "remaining": 917,
+          "adjusted_odds_now": 7851.69,
           "tracked_live": true
         },
         {
@@ -5968,8 +5968,8 @@
           "original": 41700,
           "original_understated": false,
           "published_odds": 172.66,
-          "remaining": 6491,
-          "adjusted_odds_now": 1109.23,
+          "remaining": 6149,
+          "adjusted_odds_now": 1170.92,
           "tracked_live": true
         },
         {
@@ -5977,8 +5977,8 @@
           "original": 16200,
           "original_understated": false,
           "published_odds": 444.44,
-          "remaining": 2471,
-          "adjusted_odds_now": 2913.8,
+          "remaining": 2351,
+          "adjusted_odds_now": 3062.53,
           "tracked_live": true
         },
         {
@@ -6052,8 +6052,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 10.0,
-      "top6_adjusted_odds_now": 13253.01,
-      "value_score_pct": 62.13,
+      "top6_adjusted_odds_now": 14224.14,
+      "value_score_pct": 62.08,
       "tiers": [
         {
           "amount": 200000,
@@ -6078,8 +6078,8 @@
           "original": 220,
           "original_understated": false,
           "published_odds": 60000.0,
-          "remaining": 32,
-          "adjusted_odds_now": 412500.0,
+          "remaining": 31,
+          "adjusted_odds_now": 425806.45,
           "tracked_live": true
         },
         {
@@ -6087,8 +6087,8 @@
           "original": 220,
           "original_understated": false,
           "published_odds": 60000.0,
-          "remaining": 26,
-          "adjusted_odds_now": 507692.31,
+          "remaining": 23,
+          "adjusted_odds_now": 573913.04,
           "tracked_live": true
         },
         {
@@ -6096,8 +6096,8 @@
           "original": 4400,
           "original_understated": false,
           "published_odds": 3000.0,
-          "remaining": 463,
-          "adjusted_odds_now": 28509.72,
+          "remaining": 434,
+          "adjusted_odds_now": 30414.75,
           "tracked_live": true
         },
         {
@@ -6105,8 +6105,8 @@
           "original": 4400,
           "original_understated": false,
           "published_odds": 3000.0,
-          "remaining": 474,
-          "adjusted_odds_now": 27848.1,
+          "remaining": 439,
+          "adjusted_odds_now": 30068.34,
           "tracked_live": true
         },
         {
@@ -6205,18 +6205,18 @@
       "total_tickets_printed": 10800000,
       "top_prize_amount": 500,
       "top_prize_original": 14760,
-      "top_prize_remaining": 456,
-      "pct_top_prizes_remaining": 3.1,
-      "top6_adjusted_odds_now": 307.3,
-      "value_score_pct": 2.18,
+      "top_prize_remaining": 449,
+      "pct_top_prizes_remaining": 3.0,
+      "top6_adjusted_odds_now": 312.19,
+      "value_score_pct": 2.15,
       "tiers": [
         {
           "amount": 500,
           "original": 14760,
           "original_understated": false,
           "published_odds": 731.71,
-          "remaining": 456,
-          "adjusted_odds_now": 23684.21,
+          "remaining": 449,
+          "adjusted_odds_now": 24053.45,
           "tracked_live": true
         },
         {
@@ -6224,8 +6224,8 @@
           "original": 270000,
           "original_understated": false,
           "published_odds": 40.0,
-          "remaining": 7902,
-          "adjusted_odds_now": 1366.74,
+          "remaining": 7761,
+          "adjusted_odds_now": 1391.57,
           "tracked_live": true
         },
         {
@@ -6233,8 +6233,8 @@
           "original": 900000,
           "original_understated": false,
           "published_odds": 12.0,
-          "remaining": 26787,
-          "adjusted_odds_now": 403.18,
+          "remaining": 26384,
+          "adjusted_odds_now": 409.34,
           "tracked_live": true
         }
       ],
@@ -6263,8 +6263,8 @@
       "top_prize_original": 3,
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 33.3,
-      "top6_adjusted_odds_now": 1594.68,
-      "value_score_pct": 67.2,
+      "top6_adjusted_odds_now": 1616.71,
+      "value_score_pct": 67.17,
       "tiers": [
         {
           "amount": 3000000,
@@ -6298,8 +6298,8 @@
           "original": 600,
           "original_understated": false,
           "published_odds": 8000.0,
-          "remaining": 214,
-          "adjusted_odds_now": 22429.91,
+          "remaining": 211,
+          "adjusted_odds_now": 22748.82,
           "tracked_live": true
         },
         {
@@ -6307,8 +6307,8 @@
           "original": 5960,
           "original_understated": false,
           "published_odds": 805.37,
-          "remaining": 2026,
-          "adjusted_odds_now": 2369.2,
+          "remaining": 1998,
+          "adjusted_odds_now": 2402.4,
           "tracked_live": true
         },
         {
@@ -6316,8 +6316,8 @@
           "original": 2320,
           "original_understated": false,
           "published_odds": 2068.97,
-          "remaining": 759,
-          "adjusted_odds_now": 6324.11,
+          "remaining": 749,
+          "adjusted_odds_now": 6408.54,
           "tracked_live": true
         },
         {
@@ -6400,8 +6400,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 6,
       "pct_top_prizes_remaining": 60.0,
-      "top6_adjusted_odds_now": 1270.61,
-      "value_score_pct": 61.71,
+      "top6_adjusted_odds_now": 1285.19,
+      "value_score_pct": 61.68,
       "tiers": [
         {
           "amount": 50000,
@@ -6435,8 +6435,8 @@
           "original": 1050,
           "original_understated": false,
           "published_odds": 8000.0,
-          "remaining": 510,
-          "adjusted_odds_now": 16470.59,
+          "remaining": 508,
+          "adjusted_odds_now": 16535.43,
           "tracked_live": true
         },
         {
@@ -6444,8 +6444,8 @@
           "original": 2100,
           "original_understated": false,
           "published_odds": 4000.0,
-          "remaining": 970,
-          "adjusted_odds_now": 8659.79,
+          "remaining": 955,
+          "adjusted_odds_now": 8795.81,
           "tracked_live": true
         },
         {
@@ -6453,8 +6453,8 @@
           "original": 10500,
           "original_understated": false,
           "published_odds": 800.0,
-          "remaining": 5076,
-          "adjusted_odds_now": 1654.85,
+          "remaining": 5018,
+          "adjusted_odds_now": 1673.97,
           "tracked_live": true
         },
         {
@@ -6546,8 +6546,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 40.0,
-      "top6_adjusted_odds_now": 1093.31,
-      "value_score_pct": 54.07,
+      "top6_adjusted_odds_now": 1112.05,
+      "value_score_pct": 53.99,
       "tiers": [
         {
           "amount": 200000,
@@ -6572,8 +6572,8 @@
           "original": 550,
           "original_understated": false,
           "published_odds": 26181.82,
-          "remaining": 123,
-          "adjusted_odds_now": 117073.17,
+          "remaining": 120,
+          "adjusted_odds_now": 120000.0,
           "tracked_live": true
         },
         {
@@ -6581,8 +6581,8 @@
           "original": 4560,
           "original_understated": false,
           "published_odds": 3157.89,
-          "remaining": 1008,
-          "adjusted_odds_now": 14285.71,
+          "remaining": 992,
+          "adjusted_odds_now": 14516.13,
           "tracked_live": true
         },
         {
@@ -6590,8 +6590,8 @@
           "original": 20400,
           "original_understated": false,
           "published_odds": 705.88,
-          "remaining": 4667,
-          "adjusted_odds_now": 3085.49,
+          "remaining": 4582,
+          "adjusted_odds_now": 3142.73,
           "tracked_live": true
         },
         {
@@ -6599,8 +6599,8 @@
           "original": 31800,
           "original_understated": false,
           "published_odds": 452.83,
-          "remaining": 7359,
-          "adjusted_odds_now": 1956.79,
+          "remaining": 7241,
+          "adjusted_odds_now": 1988.68,
           "tracked_live": true
         },
         {
@@ -6674,8 +6674,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 2,
       "pct_top_prizes_remaining": 20.0,
-      "top6_adjusted_odds_now": 7471.98,
-      "value_score_pct": 51.16,
+      "top6_adjusted_odds_now": 7594.94,
+      "value_score_pct": 51.15,
       "tiers": [
         {
           "amount": 155000,
@@ -6709,8 +6709,8 @@
           "original": 13700,
           "original_understated": false,
           "published_odds": 875.91,
-          "remaining": 456,
-          "adjusted_odds_now": 26315.79,
+          "remaining": 453,
+          "adjusted_odds_now": 26490.07,
           "tracked_live": true
         },
         {
@@ -6718,8 +6718,8 @@
           "original": 5500,
           "original_understated": false,
           "published_odds": 2181.82,
-          "remaining": 176,
-          "adjusted_odds_now": 68181.82,
+          "remaining": 174,
+          "adjusted_odds_now": 68965.52,
           "tracked_live": true
         },
         {
@@ -6727,8 +6727,8 @@
           "original": 29100,
           "original_understated": false,
           "published_odds": 412.37,
-          "remaining": 967,
-          "adjusted_odds_now": 12409.51,
+          "remaining": 946,
+          "adjusted_odds_now": 12684.99,
           "tracked_live": true
         },
         {
@@ -6802,8 +6802,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 2,
       "pct_top_prizes_remaining": 40.0,
-      "top6_adjusted_odds_now": 2594.59,
-      "value_score_pct": 55.9,
+      "top6_adjusted_odds_now": 2723.56,
+      "value_score_pct": 55.83,
       "tiers": [
         {
           "amount": 600000,
@@ -6819,8 +6819,8 @@
           "original": 15,
           "original_understated": false,
           "published_odds": 800000.0,
-          "remaining": 2,
-          "adjusted_odds_now": 6000000.0,
+          "remaining": 1,
+          "adjusted_odds_now": 12000000.0,
           "tracked_live": true
         },
         {
@@ -6828,8 +6828,8 @@
           "original": 900,
           "original_understated": false,
           "published_odds": 13333.33,
-          "remaining": 83,
-          "adjusted_odds_now": 144578.31,
+          "remaining": 79,
+          "adjusted_odds_now": 151898.73,
           "tracked_live": true
         },
         {
@@ -6837,8 +6837,8 @@
           "original": 23300,
           "original_understated": false,
           "published_odds": 515.02,
-          "remaining": 2066,
-          "adjusted_odds_now": 5808.33,
+          "remaining": 1974,
+          "adjusted_odds_now": 6079.03,
           "tracked_live": true
         },
         {
@@ -6846,8 +6846,8 @@
           "original": 6000,
           "original_understated": false,
           "published_odds": 2000.0,
-          "remaining": 547,
-          "adjusted_odds_now": 21937.84,
+          "remaining": 518,
+          "adjusted_odds_now": 23166.02,
           "tracked_live": true
         },
         {
@@ -6855,8 +6855,8 @@
           "original": 22200,
           "original_understated": false,
           "published_odds": 540.54,
-          "remaining": 1925,
-          "adjusted_odds_now": 6233.77,
+          "remaining": 1832,
+          "adjusted_odds_now": 6550.22,
           "tracked_live": true
         },
         {
@@ -6930,8 +6930,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 20.0,
-      "top6_adjusted_odds_now": 1111.57,
-      "value_score_pct": 64.89,
+      "top6_adjusted_odds_now": 1118.94,
+      "value_score_pct": 64.87,
       "tiers": [
         {
           "amount": 3000000,
@@ -6974,8 +6974,8 @@
           "original": 1575,
           "original_understated": false,
           "published_odds": 3428.57,
-          "remaining": 704,
-          "adjusted_odds_now": 7670.45,
+          "remaining": 699,
+          "adjusted_odds_now": 7725.32,
           "tracked_live": true
         },
         {
@@ -6983,8 +6983,8 @@
           "original": 8505,
           "original_understated": false,
           "published_odds": 634.92,
-          "remaining": 3885,
-          "adjusted_odds_now": 1389.96,
+          "remaining": 3858,
+          "adjusted_odds_now": 1399.69,
           "tracked_live": true
         },
         {
@@ -7067,8 +7067,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 3,
       "pct_top_prizes_remaining": 30.0,
-      "top6_adjusted_odds_now": 162.21,
-      "value_score_pct": 55.03,
+      "top6_adjusted_odds_now": 163.14,
+      "value_score_pct": 54.98,
       "tiers": [
         {
           "amount": 500000,
@@ -7093,8 +7093,8 @@
           "original": 1320,
           "original_understated": false,
           "published_odds": 10909.09,
-          "remaining": 483,
-          "adjusted_odds_now": 29813.66,
+          "remaining": 478,
+          "adjusted_odds_now": 30125.52,
           "tracked_live": true
         },
         {
@@ -7102,8 +7102,8 @@
           "original": 10680,
           "original_understated": false,
           "published_odds": 1348.31,
-          "remaining": 3819,
-          "adjusted_odds_now": 3770.62,
+          "remaining": 3798,
+          "adjusted_odds_now": 3791.47,
           "tracked_live": true
         },
         {
@@ -7111,8 +7111,8 @@
           "original": 18360,
           "original_understated": false,
           "published_odds": 784.31,
-          "remaining": 6516,
-          "adjusted_odds_now": 2209.94,
+          "remaining": 6479,
+          "adjusted_odds_now": 2222.57,
           "tracked_live": true
         },
         {
@@ -7120,8 +7120,8 @@
           "original": 216000,
           "original_understated": false,
           "published_odds": 66.67,
-          "remaining": 77948,
-          "adjusted_odds_now": 184.74,
+          "remaining": 77505,
+          "adjusted_odds_now": 185.79,
           "tracked_live": true
         },
         {
@@ -7186,8 +7186,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 2,
       "pct_top_prizes_remaining": 40.0,
-      "top6_adjusted_odds_now": 546.88,
-      "value_score_pct": 59.35,
+      "top6_adjusted_odds_now": 550.58,
+      "value_score_pct": 59.32,
       "tiers": [
         {
           "amount": 3000000,
@@ -7230,8 +7230,8 @@
           "original": 1000,
           "original_understated": false,
           "published_odds": 4800.0,
-          "remaining": 333,
-          "adjusted_odds_now": 14414.41,
+          "remaining": 331,
+          "adjusted_odds_now": 14501.51,
           "tracked_live": true
         },
         {
@@ -7239,8 +7239,8 @@
           "original": 24800,
           "original_understated": false,
           "published_odds": 193.55,
-          "remaining": 8254,
-          "adjusted_odds_now": 581.54,
+          "remaining": 8197,
+          "adjusted_odds_now": 585.58,
           "tracked_live": true
         },
         {
@@ -7314,8 +7314,8 @@
       "top_prize_original": 50,
       "top_prize_remaining": 19,
       "pct_top_prizes_remaining": 38.0,
-      "top6_adjusted_odds_now": 138.25,
-      "value_score_pct": 49.27,
+      "top6_adjusted_odds_now": 138.87,
+      "value_score_pct": 49.2,
       "tiers": [
         {
           "amount": 100000,
@@ -7340,8 +7340,8 @@
           "original": 42600,
           "original_understated": false,
           "published_odds": 338.03,
-          "remaining": 18526,
-          "adjusted_odds_now": 777.29,
+          "remaining": 18453,
+          "adjusted_odds_now": 780.36,
           "tracked_live": true
         },
         {
@@ -7349,8 +7349,8 @@
           "original": 4800,
           "original_understated": false,
           "published_odds": 3000.0,
-          "remaining": 2068,
-          "adjusted_odds_now": 6963.25,
+          "remaining": 2060,
+          "adjusted_odds_now": 6990.29,
           "tracked_live": true
         },
         {
@@ -7358,8 +7358,8 @@
           "original": 72000,
           "original_understated": false,
           "published_odds": 200.0,
-          "remaining": 31362,
-          "adjusted_odds_now": 459.15,
+          "remaining": 31221,
+          "adjusted_odds_now": 461.23,
           "tracked_live": true
         },
         {
@@ -7367,8 +7367,8 @@
           "original": 120000,
           "original_understated": false,
           "published_odds": 120.0,
-          "remaining": 52173,
-          "adjusted_odds_now": 276.0,
+          "remaining": 51929,
+          "adjusted_odds_now": 277.3,
           "tracked_live": true
         },
         {
@@ -7415,8 +7415,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 20.0,
-      "top6_adjusted_odds_now": 9734.51,
-      "value_score_pct": 68.62,
+      "top6_adjusted_odds_now": 9880.24,
+      "value_score_pct": 68.6,
       "tiers": [
         {
           "amount": 5000000,
@@ -7468,8 +7468,8 @@
           "original": 2145,
           "original_understated": false,
           "published_odds": 3076.92,
-          "remaining": 658,
-          "adjusted_odds_now": 10030.4,
+          "remaining": 648,
+          "adjusted_odds_now": 10185.19,
           "tracked_live": true
         },
         {
@@ -7543,8 +7543,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 3,
       "pct_top_prizes_remaining": 30.0,
-      "top6_adjusted_odds_now": 544.59,
-      "value_score_pct": 55.87,
+      "top6_adjusted_odds_now": 549.15,
+      "value_score_pct": 55.83,
       "tiers": [
         {
           "amount": 200000,
@@ -7578,8 +7578,8 @@
           "original": 2200,
           "original_understated": false,
           "published_odds": 5454.55,
-          "remaining": 591,
-          "adjusted_odds_now": 20304.57,
+          "remaining": 582,
+          "adjusted_odds_now": 20618.56,
           "tracked_live": true
         },
         {
@@ -7587,8 +7587,8 @@
           "original": 50000,
           "original_understated": false,
           "published_odds": 240.0,
-          "remaining": 13355,
-          "adjusted_odds_now": 898.54,
+          "remaining": 13260,
+          "adjusted_odds_now": 904.98,
           "tracked_live": true
         },
         {
@@ -7596,8 +7596,8 @@
           "original": 30000,
           "original_understated": false,
           "published_odds": 400.0,
-          "remaining": 8067,
-          "adjusted_odds_now": 1487.54,
+          "remaining": 7988,
+          "adjusted_odds_now": 1502.25,
           "tracked_live": true
         },
         {
@@ -7680,8 +7680,8 @@
       "top_prize_original": 10,
       "top_prize_remaining": 3,
       "pct_top_prizes_remaining": 30.0,
-      "top6_adjusted_odds_now": 433.41,
-      "value_score_pct": 60.0,
+      "top6_adjusted_odds_now": 435.47,
+      "value_score_pct": 59.98,
       "tiers": [
         {
           "amount": 500000,
@@ -7706,8 +7706,8 @@
           "original": 1680,
           "original_understated": false,
           "published_odds": 8571.43,
-          "remaining": 574,
-          "adjusted_odds_now": 25087.11,
+          "remaining": 570,
+          "adjusted_odds_now": 25263.16,
           "tracked_live": true
         },
         {
@@ -7715,8 +7715,8 @@
           "original": 7680,
           "original_understated": false,
           "published_odds": 1875.0,
-          "remaining": 2509,
-          "adjusted_odds_now": 5739.34,
+          "remaining": 2499,
+          "adjusted_odds_now": 5762.3,
           "tracked_live": true
         },
         {
@@ -7724,8 +7724,8 @@
           "original": 6600,
           "original_understated": false,
           "published_odds": 2181.82,
-          "remaining": 2220,
-          "adjusted_odds_now": 6486.49,
+          "remaining": 2210,
+          "adjusted_odds_now": 6515.84,
           "tracked_live": true
         },
         {
@@ -7733,8 +7733,8 @@
           "original": 82800,
           "original_understated": false,
           "published_odds": 173.91,
-          "remaining": 27913,
-          "adjusted_odds_now": 515.89,
+          "remaining": 27780,
+          "adjusted_odds_now": 518.36,
           "tracked_live": true
         },
         {
@@ -7815,18 +7815,18 @@
       "total_tickets_printed": 5400000,
       "top_prize_amount": 3000000,
       "top_prize_original": 5,
-      "top_prize_remaining": 1,
-      "pct_top_prizes_remaining": 20.0,
-      "top6_adjusted_odds_now": 556.36,
-      "value_score_pct": 56.01,
+      "top_prize_remaining": 0,
+      "pct_top_prizes_remaining": 0.0,
+      "top6_adjusted_odds_now": 560.34,
+      "value_score_pct": 54.13,
       "tiers": [
         {
           "amount": 3000000,
           "original": 5,
           "original_understated": false,
           "published_odds": 1080000.0,
-          "remaining": 1,
-          "adjusted_odds_now": 5400000.0,
+          "remaining": 0,
+          "adjusted_odds_now": null,
           "tracked_live": true
         },
         {
@@ -7852,8 +7852,8 @@
           "original": 1575,
           "original_understated": false,
           "published_odds": 3428.57,
-          "remaining": 435,
-          "adjusted_odds_now": 12413.79,
+          "remaining": 432,
+          "adjusted_odds_now": 12500.0,
           "tracked_live": true
         },
         {
@@ -7861,8 +7861,8 @@
           "original": 3600,
           "original_understated": false,
           "published_odds": 1500.0,
-          "remaining": 967,
-          "adjusted_odds_now": 5584.28,
+          "remaining": 961,
+          "adjusted_odds_now": 5619.15,
           "tracked_live": true
         },
         {
@@ -7870,8 +7870,8 @@
           "original": 31950,
           "original_understated": false,
           "published_odds": 169.01,
-          "remaining": 8293,
-          "adjusted_odds_now": 651.15,
+          "remaining": 8234,
+          "adjusted_odds_now": 655.82,
           "tracked_live": true
         },
         {
@@ -7945,8 +7945,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 2,
       "pct_top_prizes_remaining": 40.0,
-      "top6_adjusted_odds_now": 557.84,
-      "value_score_pct": 64.94,
+      "top6_adjusted_odds_now": 560.22,
+      "value_score_pct": 64.92,
       "tiers": [
         {
           "amount": 3000000,
@@ -7980,8 +7980,8 @@
           "original": 2280,
           "original_understated": false,
           "published_odds": 3157.89,
-          "remaining": 957,
-          "adjusted_odds_now": 7523.51,
+          "remaining": 954,
+          "adjusted_odds_now": 7547.17,
           "tracked_live": true
         },
         {
@@ -7989,8 +7989,8 @@
           "original": 11100,
           "original_understated": false,
           "published_odds": 648.65,
-          "remaining": 4570,
-          "adjusted_odds_now": 1575.49,
+          "remaining": 4552,
+          "adjusted_odds_now": 1581.72,
           "tracked_live": true
         },
         {
@@ -7998,8 +7998,8 @@
           "original": 18300,
           "original_understated": false,
           "published_odds": 393.44,
-          "remaining": 7365,
-          "adjusted_odds_now": 977.6,
+          "remaining": 7331,
+          "adjusted_odds_now": 982.13,
           "tracked_live": true
         },
         {
@@ -8091,8 +8091,8 @@
       "top_prize_original": 30,
       "top_prize_remaining": 4,
       "pct_top_prizes_remaining": 13.3,
-      "top6_adjusted_odds_now": 1923.76,
-      "value_score_pct": 60.91,
+      "top6_adjusted_odds_now": 1945.95,
+      "value_score_pct": 60.89,
       "tiers": [
         {
           "amount": 100000,
@@ -8126,8 +8126,8 @@
           "original": 3420,
           "original_understated": false,
           "published_odds": 3157.89,
-          "remaining": 586,
-          "adjusted_odds_now": 18430.03,
+          "remaining": 577,
+          "adjusted_odds_now": 18717.5,
           "tracked_live": true
         },
         {
@@ -8135,8 +8135,8 @@
           "original": 10350,
           "original_understated": false,
           "published_odds": 1043.48,
-          "remaining": 1825,
-          "adjusted_odds_now": 5917.81,
+          "remaining": 1803,
+          "adjusted_odds_now": 5990.02,
           "tracked_live": true
         },
         {
@@ -8144,8 +8144,8 @@
           "original": 18000,
           "original_understated": false,
           "published_odds": 600.0,
-          "remaining": 3184,
-          "adjusted_odds_now": 3391.96,
+          "remaining": 3151,
+          "adjusted_odds_now": 3427.48,
           "tracked_live": true
         },
         {
@@ -8219,8 +8219,8 @@
       "top_prize_original": 5,
       "top_prize_remaining": 1,
       "pct_top_prizes_remaining": 20.0,
-      "top6_adjusted_odds_now": 1237.75,
-      "value_score_pct": 67.44,
+      "top6_adjusted_odds_now": 1245.67,
+      "value_score_pct": 67.43,
       "tiers": [
         {
           "amount": 3000000,
@@ -8263,8 +8263,8 @@
           "original": 6180,
           "original_understated": false,
           "published_odds": 1165.05,
-          "remaining": 1575,
-          "adjusted_odds_now": 4571.43,
+          "remaining": 1565,
+          "adjusted_odds_now": 4600.64,
           "tracked_live": true
         },
         {
@@ -8272,8 +8272,8 @@
           "original": 16500,
           "original_understated": false,
           "published_odds": 436.36,
-          "remaining": 4208,
-          "adjusted_odds_now": 1711.03,
+          "remaining": 4181,
+          "adjusted_odds_now": 1722.08,
           "tracked_live": true
         },
         {
