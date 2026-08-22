@@ -1,0 +1,11 @@
+.git
+.claude
+__pycache__/
+*.pyc
+*.pyo
+*.log
+deploy/
+README.md
+LICENSE
+scrape.lock
+watchdog_state.json
