@@ -29,9 +29,10 @@ MIN_SUCCESS_RATIO = 0.5
 MIN_IMAGE_BYTES = 5 * 1024
 
 ROOT = Path(__file__).resolve().parent
-DATA_FILE = ROOT / "data.json"
-IMAGES_DIR = ROOT / "images"
-LOCK_FILE = ROOT / "scrape.lock"
+DATA_DIR = Path(os.environ.get("DATA_DIR", str(ROOT))).resolve()
+DATA_FILE = DATA_DIR / "data.json"
+IMAGES_DIR = DATA_DIR / "images"
+LOCK_FILE = DATA_DIR / "scrape.lock"
 
 
 def pid_alive(pid):

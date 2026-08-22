@@ -59,10 +59,65 @@ Then open `http://<this-machine>:8789/`.
 
 ## Config (env vars)
 
-| Var    | Default   | Purpose                          |
-|--------|-----------|-----------------------------------|
-| `PORT` | `8789`    | HTTP port for `server.py`         |
-| `BIND` | `0.0.0.0` | Bind address for `server.py`      |
+| Var        | Default            | Purpose                                                  |
+|------------|--------------------|----------------------------------------------------------|
+| `PORT`     | `8789`             | HTTP port for `server.py`                                  |
+| `BIND`     | `0.0.0.0`          | Bind address for `server.py`                               |
+| `DATA_DIR` | the repo directory | Where `data.json`, `images/`, and the scrape lock live     |
+
+`DATA_DIR` exists for the container build: the image ships a snapshot of
+`data.json` + `images/` so it runs standalone, but pointing `DATA_DIR` at a
+mounted host directory makes it serve live data instead of that snapshot.
+
+## Docker
+
+Published as [`pingywon/pa-lottery-scratch-odds`](https://hub.docker.com/r/pingywon/pa-lottery-scratch-odds).
+
+Standalone, with the snapshot baked into the image:
+
+```bash
+docker run -d -p 8789:80 pingywon/pa-lottery-scratch-odds:latest
+```
+
+Serving live data from a host checkout instead:
+
+```bash
+docker run -d -p 8789:80 \
+    -e DATA_DIR=/data -v /path/to/pa-lottery-scratch-odds:/data \
+    pingywon/pa-lottery-scratch-odds:latest
+```
+
+### On its own LAN IP
+
+`deploy/run.sh` puts the container on the real LAN via a macvlan network, so it
+answers on port 80 at its own address rather than sharing the host's ports:
+
+```bash
+./deploy/run.sh v1.7.0        # -> http://192.168.13.16/
+```
+
+It restarts with `unless-stopped`, so it comes back on its own after a reboot.
+
+One macvlan quirk worth knowing: a macvlan container is unreachable *from the
+host that runs it* (though every other machine on the LAN reaches it fine).
+`deploy/docker-lan-macvlan-shim.service` + `deploy/macvlan-shim-up.sh` fix that
+with a host-side shim interface and a `/32` route per container IP. Install to
+`/etc/systemd/system/` and `/usr/local/sbin/` respectively, list the container
+IPs in `/etc/default/macvlan-shim`, and enable the unit. Only ever route `/32`s
+through the shim — routing the whole subnet shadows the host's own LAN route.
+
+### Cutting a release
+
+```bash
+./deploy/release.sh v1.7.0
+```
+
+Builds, smoke-tests the image (health endpoint reports a non-zero game count and
+the page renders), pushes `:v1.7.0` and `:latest` to Docker Hub, git-tags, and
+redeploys. Nothing is pushed if the smoke test fails.
+
+Note that `images/` is gitignored, so a fresh clone must run `python3 scrape.py`
+once before it can build an image.
 
 ## Endpoints
 

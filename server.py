@@ -14,11 +14,14 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-DATA_FILE = ROOT / "data.json"
-IMAGES_DIR = ROOT / "images"
+# DATA_DIR lets a container serve live, host-maintained data mounted over the
+# snapshot baked into the image. Code always lives under ROOT.
+DATA_DIR = Path(os.environ.get("DATA_DIR", str(ROOT))).resolve()
+DATA_FILE = DATA_DIR / "data.json"
+IMAGES_DIR = DATA_DIR / "images"
 INDEX_FILE = ROOT / "index.html"
 SCRAPE_SCRIPT = ROOT / "scrape.py"
-LOCK_FILE = ROOT / "scrape.lock"
+LOCK_FILE = DATA_DIR / "scrape.lock"
 
 PORT = int(os.environ.get("PORT", "8789"))
 BIND = os.environ.get("BIND", "0.0.0.0")
@@ -133,7 +136,7 @@ class Handler(BaseHTTPRequestHandler):
                 body = json.dumps({"status": "already_running"}).encode()
                 self._send(HTTPStatus.CONFLICT, body, "application/json")
                 return
-            subprocess.Popen([sys.executable, str(SCRAPE_SCRIPT)], cwd=str(ROOT))
+            subprocess.Popen([sys.executable, str(SCRAPE_SCRIPT)], cwd=str(DATA_DIR))
             body = json.dumps({"status": "started"}).encode()
             self._send(HTTPStatus.ACCEPTED, body, "application/json")
             return

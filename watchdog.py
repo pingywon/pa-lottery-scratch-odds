@@ -9,6 +9,7 @@ plus an email alert when that stamp actually moves. Meant to run every 15
 minutes via pa-lottery-scratch-odds-watchdog.timer.
 """
 import json
+import os
 import smtplib
 import subprocess
 import sys
@@ -20,7 +21,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import scrape  # reuse fetch(), parse_freshness_label(), REMAINING_URL, log()
 
 ROOT = Path(__file__).resolve().parent
-STATE_FILE = ROOT / "watchdog_state.json"
+DATA_DIR = Path(os.environ.get("DATA_DIR", str(ROOT))).resolve()
+STATE_FILE = DATA_DIR / "watchdog_state.json"
 BREVO_CREDS_FILE = Path.home() / ".brevo_smtp"
 
 EMAIL_TO = "pingywon@gmail.com"

@@ -1,0 +1,15 @@
+[Unit]
+Description=Host-side macvlan shim so this box can reach its own macvlan-network Docker containers
+After=docker.service network-online.target
+Requires=docker.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+EnvironmentFile=-/etc/default/macvlan-shim
+ExecStart=/usr/local/sbin/macvlan-shim-up.sh
+ExecStop=/usr/sbin/ip link del macvlan-shim
+
+[Install]
+WantedBy=multi-user.target
