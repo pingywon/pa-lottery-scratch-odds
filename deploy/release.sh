@@ -32,8 +32,12 @@ done
 [ -n "$ok" ] || { echo "smoke test FAILED"; docker logs --tail 40 "$cid"; exit 1; }
 games=$(curl -fsS "http://127.0.0.1:$port/health" | python3 -c 'import json,sys; print(json.load(sys.stdin)["games"])')
 [ "$games" -gt 0 ] || { echo "smoke test FAILED: /health reports $games games"; exit 1; }
-curl -fsS --max-time 5 "http://127.0.0.1:$port/" | grep -q "PA Lottery Scratch Odds" \
-    || { echo "smoke test FAILED: index.html did not render"; exit 1; }
+body=$(curl -fsS --max-time 10 "http://127.0.0.1:$port/") || {
+    echo "smoke test FAILED: could not fetch /"; docker logs --tail 40 "$cid"; exit 1; }
+case "$body" in
+    *"PA Lottery Scratch Odds"*) ;;
+    *) echo "smoke test FAILED: index.html did not render"; exit 1 ;;
+esac
 echo "==> smoke test OK ($games games)"
 docker rm -f "$cid" >/dev/null; trap - EXIT
 
