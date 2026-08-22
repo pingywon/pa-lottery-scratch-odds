@@ -21,9 +21,9 @@ echo "==> building $IMAGE:$VERSION"
 docker build -t "$IMAGE:$VERSION" -t "$IMAGE:latest" .
 
 echo "==> smoke-testing the image before it goes anywhere"
-cid=$(docker run -d -P -e PORT=8080 "$IMAGE:$VERSION")
+cid=$(docker run -d -p 127.0.0.1::80 "$IMAGE:$VERSION")
 trap 'docker rm -f "$cid" >/dev/null 2>&1 || true' EXIT
-port=$(docker port "$cid" 8080/tcp | head -1 | sed 's/.*://')
+port=$(docker port "$cid" 80/tcp | head -1 | sed 's/.*://')
 ok=""
 for _ in $(seq 1 20); do
     if curl -fsS --max-time 3 "http://127.0.0.1:$port/health" >/dev/null 2>&1; then ok=1; break; fi
